@@ -25,7 +25,5 @@ Tentou-se manter o mais simples e elegante, não fazendo uso de shields ou modul
 # Necessary Hardware
 
 	Arduino
-	Difria Rele 5v
 	PC (:
 
-# Layout baseando em http://html5up.net/txt
