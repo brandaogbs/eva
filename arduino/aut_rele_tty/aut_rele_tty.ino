@@ -1,45 +1,55 @@
-#define pLED1 13
-#define pLED2 12
-#define pLED3 11
+#define pRELAY1 12
+#define pRELAY2 11
+#define pRELAY3 10
+#define pRELAY4 9
+
 
 void read_serial(){
 	char s = Serial.read();
 	if(s == 'a')
-		turn_function(pLED1);
+		 digitalWrite(pRELAY1, HIGH);
 	if(s == 'b')
-		turn_function(pLED2);
+		 digitalWrite(pRELAY2, HIGH);
 	if(s == 'c')
-		turn_function(pLED3);
-        if(s == 'z'){
-	        digitalWrite(13, LOW);
-                digitalWrite(12, LOW);
-                digitalWrite(11, LOW);
-                
+		 digitalWrite(pRELAY3, HIGH);
+	if(s == 'd')
+		 digitalWrite(pRELAY4, HIGH);
+        if(s == 'A')
+		 digitalWrite(pRELAY1, LOW);
+	if(s == 'B')
+		 digitalWrite(pRELAY2, LOW);
+	if(s == 'C')
+		 digitalWrite(pRELAY3, LOW);
+	if(s == 'D')
+		 digitalWrite(pRELAY4, LOW);
+        if(s == 'X'){
+	        digitalWrite(pRELAY1, LOW);
+                digitalWrite(pRELAY2, LOW); 
+                digitalWrite(pRELAY3, LOW);
+                digitalWrite(pRELAY4, LOW);   
         }
-        if(s == 'x'
-        ){
-		digitalWrite(13, HIGH);
-                digitalWrite(12, HIGH);
-                digitalWrite(11, HIGH);
+        if(s == 'x'){
+	        digitalWrite(pRELAY1, HIGH);
+                digitalWrite(pRELAY2, HIGH);
+                digitalWrite(pRELAY3, HIGH);
+                digitalWrite(pRELAY4, HIGH);
 	        Serial.print(s);
         }
 }
 
-void turn_function(int pin){
-	digitalWrite(pin, !digitalRead(pin));
-}
-
 void setup(){
 	Serial.begin(9600);
-	pinMode(pLED1, OUTPUT);
-	pinMode(pLED2, OUTPUT);
-        pinMode(pLED3, OUTPUT);
+	pinMode(pRELAY1, OUTPUT);
+	pinMode(pRELAY2, OUTPUT);
+	pinMode(pRELAY3, OUTPUT);
+	pinMode(pRELAY4, OUTPUT);
 }
 
 void loop(){
 	read_serial();
 	delay(300);
 }
+
 
 
 
