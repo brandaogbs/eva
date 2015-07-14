@@ -1,0 +1,1591 @@
+<!DOCTYPE html>
+<!-- saved from url=(0084)http://www.webdesignerdepot.com/2012/10/creating-a-modal-window-with-html5-and-css3/ -->
+<html class="wf-lftetica-i7-active wf-lftetica-i8-active wf-lftetica-n7-active wf-lftetica-n8-active wf-proximanovasoft-n4-active wf-proximanovasoft-n7-active wf-active"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	
+  	
+	<title>Creating a modal window with HTML5 &amp; CSS3 | Webdesigner Depot</title>
+		
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  
+    <link rel="shortcut icon" href="http://netdna.webdesignerdepot.com/wddfavicon2.ico" type="image/x-icon">
+    <link rel="icon" type="image/png" href="http://netdna.webdesignerdepot.com/wddfavicon.png"> 
+    <link rel="apple-touch-icon" href="http://netdna.webdesignerdepot.com/touch-icon.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="http://netdna.webdesignerdepot.com/apple-touch-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="http://netdna.webdesignerdepot.com/apple-touch-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="http://netdna.webdesignerdepot.com/apple-touch-icon-72x72.png">
+ 
+    
+    <link rel="alternate" type="application/rss+xml" title="Webdesigner Depot RSS Feed" href="http://www.webdesignerdepot.com/feed/">
+    <link rel="pingback" href="http://www.webdesignerdepot.com/xmlrpc.php">	
+    <!-- Dependencies -->
+     
+	  <link rel="stylesheet" type="text/css" href="./modal_files/style.css" media="screen, print">
+    
+      
+      
+    
+     
+
+    
+  
+<!-- All in One SEO Pack 2.2.6.2 by Michael Torbert of Semper Fi Web Design[113,218] -->
+<link rel="author" href="https://plus.google.com/107922074380367990820">
+<meta name="description" content="Modal boxes are a frequently utilized tool in the web developer&#39;s arsenal. Used for, amongst many things, login/register forms; advertisements; or just">
+
+<meta name="keywords" content="best practices,css3,graceful degradation,how to,html5,modal windows,progressive enhancement">
+
+<link rel="canonical" href="./modal_files/modal.html">
+<!-- /all in one seo pack -->
+
+<!-- JM Twitter Cards by Julien Maury 5.4.2 -->
+<meta name="twitter:card" content="summary">
+<meta name="twitter:creator" content="@DesignerDepot">
+<meta name="twitter:site" content="@DesignerDepot">
+<meta name="twitter:title" content="Creating a modal window with HTML5 &amp; CSS3">
+<meta name="twitter:description" content="Modal boxes are a frequently utilized tool in the web developer&#39;s arsenal. Used for, amongst many things, login/register forms; advertisements; or just notifications to the user.However despite the">
+<meta name="twitter:image:src" content="http://netdna.webdesignerdepot.com/uploads/2013/05/designer-depot.png">
+<!-- /JM Twitter Cards 5.4.2 -->
+
+<link rel="alternate" type="application/rss+xml" title="Webdesigner Depot » Creating a modal window with HTML5 &amp; CSS3 Comments Feed" href="http://www.webdesignerdepot.com/2012/10/creating-a-modal-window-with-html5-and-css3/feed/">
+		<script async="" type="text/javascript" src="./modal_files/gpt.js"></script><script src="./modal_files/cb=gapi.loaded_1" async=""></script><script src="./modal_files/cb=gapi.loaded_0" async=""></script><script type="text/javascript" async="" src="./modal_files/plusone.js" gapi_processed="true"></script><script id="facebook-jssdk" src="./modal_files/sdk.js"></script><script id="twitter-wjs" src="./modal_files/widgets.js"></script><script type="text/javascript" async="" src="./modal_files/widgets(1).js"></script><script async="" type="text/javascript" src="./modal_files/ca-pub-5778786047058798.js"></script><script src="./modal_files/7182.js" async="" type="text/javascript"></script><script type="text/javascript" async="" src="./modal_files/pinit_main.js"></script><script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"http:\/\/s.w.org\/images\/core\/emoji\/72x72\/","ext":".png","source":{"concatemoji":"http:\/\/netdna.webdesignerdepot.com\/js\/wp-emoji-release.min.js?ver=4.2.2"}};
+			!function(a,b,c){function d(a){var c=b.createElement("canvas"),d=c.getContext&&c.getContext("2d");return d&&d.fillText?(d.textBaseline="top",d.font="600 32px Arial","flag"===a?(d.fillText(String.fromCharCode(55356,56812,55356,56807),0,0),c.toDataURL().length>3e3):(d.fillText(String.fromCharCode(55357,56835),0,0),0!==d.getImageData(16,16,1,1).data[0])):!1}function e(a){var c=b.createElement("script");c.src=a,c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var f,g;c.supports={simple:d("simple"),flag:d("flag")},c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.simple&&c.supports.flag||(g=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",g,!1),a.addEventListener("load",g,!1)):(a.attachEvent("onload",g),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),f=c.source||{},f.concatemoji?e(f.concatemoji):f.wpemoji&&f.twemoji&&(e(f.twemoji),e(f.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script><script src="./modal_files/wp-emoji-release.min.js" type="text/javascript"></script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+<link rel="stylesheet" id="dpProEventCalendar_headcss-css" href="./modal_files/dpProEventCalendar.css" type="text/css" media="all">
+<link rel="stylesheet" id="font-awesome-original-css" href="./modal_files/font-awesome.css" type="text/css" media="all">
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://www.webdesignerdepot.com/xmlrpc.php?rsd">
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://www.webdesignerdepot.com/wp-includes/wlwmanifest.xml"> 
+<link rel="prev" title="Facelift for VEVO" href="http://www.webdesignerdepot.com/2012/10/facelift-for-vevo/">
+<link rel="next" title="Plunk: mobile click testing made easy" href="http://www.webdesignerdepot.com/2012/10/mobile-click-testing-made-easy/">
+<meta name="generator" content="WordPress 4.2.2">
+<link rel="shortlink" href="http://www.webdesignerdepot.com/?p=36526">
+<script type="text/javascript">
+var ajaxurl = 'http://www.webdesignerdepot.com/wp-admin/admin-ajax.php';
+</script>
+
+<!-- WordPress Facebook Open Graph protocol plugin (WPFBOGP v2.0.11) http://rynoweb.com/wordpress-plugins/ -->
+<meta property="fb:admins" content="1478130005">
+<meta property="fb:app_id" content="364823976950405">
+<meta property="og:url" content="http://www.webdesignerdepot.com/2012/10/creating-a-modal-window-with-html5-and-css3/">
+<meta property="og:title" content="Creating a modal window with HTML5 &amp; CSS3">
+<meta property="og:site_name" content="Webdesigner Depot">
+<meta property="og:description" content="Modal boxes are a frequently utilized tool in the web developer&#39;s arsenal. Used for, amongst many things, login/register forms; advertisements; or just notifica">
+<meta property="og:type" content="article">
+<meta property="og:image" content="http://netdna.webdesignerdepot.com/uploads/2013/05/designer-depot.png">
+<meta property="og:image" content="http://netdna.webdesignerdepot.com/uploads/2012/08/modal_advertising.png">
+<meta property="og:image" content="http://netdna.webdesignerdepot.com/uploads/2012/08/modal_alerts.png">
+<meta property="og:image" content="http://netdna.webdesignerdepot.com/uploads/2012/08/modal_lightbox.png">
+<meta property="og:image" content="http://netdna.webdesignerdepot.com/uploads/2012/08/modal_login.png">
+<meta property="og:image" content="http://netdna.webdesignerdepot.com/uploads/2012/08/modal_final.png">
+<meta property="og:image" content="http://netdna.webdesignerdepot.com/uploads/2012/08/modal_step3.png">
+<meta property="og:image" content="http://netdna.webdesignerdepot.com/uploads/2012/08/thumb11.jpg">
+<meta property="og:locale" content="en_us">
+<!-- // end wpfbogp -->
+ 
+  
+    
+    
+  <!-- BuySellAds PRO Code -->
+  <script type="text/javascript">(function(){var bsa = document.createElement('script');bsa.type = 'text/javascript';bsa.async = true;bsa.src = '//cdn.buysellads.com/ac/pro.js';document.getElementsByTagName('head')[0].appendChild(bsa);})();</script><script type="text/javascript" async="" src="./modal_files/pro.js"></script>
+<!-- End BuySellAds PRO Ad Code -->
+
+
+
+<script src="./modal_files/gea3rrq.js"></script>
+<style type="text/css">.tk-proxima-nova-soft,body{font-family:"proxima-nova-soft",sans-serif;}#main-menu a,#search-field,#shrs-counter,.ap-title,.asection-title,.button,.cp-title,.entry-content blockquote,.footer-submit-btn,.form-label,.hc-parent-lnk,.home-cat-lnk,.sidebar-title,.single-meta,.sm-cat-links,.spr-lnk,.tk-lft-etica,.widget-poll .poll-wh-style,h1,h2{font-family:"lft-etica",sans-serif;}</style><link rel="stylesheet" href="http://use.typekit.net/c/2332d0/1w;lft-etica,2,ZRl:R:i7,ZRn:R:i8,ZRk:R:n7,ZRm:R:n8;proxima-nova-soft,2,S2w:R:n4,S2z:R:n7/d?3bb2a6e53c9684ffdc9a9aff1f5b2a628abf9b77fd94669c7b4f1a62bf0ddc42bcc3fb2498ea48429aabefe1a6b3b1515f617cbb75fe3c63f01aff12744ce260d7f429df844a3adf20cd916fea9114567199e7387101a538194b4350017f5a" media="all"><script>try{Typekit.load();}catch(e){}</script>
+
+	
+<script>
+    (function(f,b){
+        var c;
+        f.hj=f.hj||function(){(f.hj.q=f.hj.q||[]).push(arguments)};
+        f._hjSettings={hjid:17005, hjsv:3};
+        c=b.createElement("script");c.async=1;
+        c.src="//static.hotjar.com/c/hotjar-17005.js?sv=3";
+        b.getElementsByTagName("head")[0].appendChild(c); 
+    })(window,document);
+</script><script async="" src="./modal_files/hotjar-17005.js"></script>  
+  
+<script src="./modal_files/secureAnonymousFramework"></script><script type="text/javascript" async="" src="./modal_files/embed.js"></script><style type="text/css">a.PIN_1434423599893_pin_it_button_20 { cursor: pointer!important; background-repeat: none!important; background-size: 40px 60px!important; height: 20px!important; padding: 0!important; vertical-align: baseline!important; text-decoration: none!important; width: 40px!important; background-position: 0 -20px }
+a.PIN_1434423599893_pin_it_button_20:hover { background-position: 0 0px }
+a.PIN_1434423599893_pin_it_button_20:active, a.PIN_1434423599893_pin_it_button_20.PIN_1434423599893_hazClick { background-position: 0 -40px }
+a.PIN_1434423599893_pin_it_button_inline_20 { cursor: pointer!important; position: relative!important; display: inline-block!important; }
+a.PIN_1434423599893_pin_it_button_floating_20 { cursor: pointer!important; position: absolute!important; }
+a.PIN_1434423599893_pin_it_button_en_20_red { background-image: url(https://s-passets.pinimg.com/images/pidgets/pinit_bg_en_rect_red_20_1.png)!important; }
+a.PIN_1434423599893_pin_it_button_en_20_white { background-image: url(https://s-passets.pinimg.com/images/pidgets/pinit_bg_en_rect_white_20_1.png)!important; }
+a.PIN_1434423599893_pin_it_button_en_20_gray { background-image: url(https://s-passets.pinimg.com/images/pidgets/pinit_bg_en_rect_gray_20_1.png)!important; }
+a.PIN_1434423599893_pin_it_button_ja_20_red { background-image: url(https://s-passets.pinimg.com/images/pidgets/pinit_bg_ja_rect_red_20_1.png)!important; }
+a.PIN_1434423599893_pin_it_button_ja_20_white { background-image: url(https://s-passets.pinimg.com/images/pidgets/pinit_bg_ja_rect_white_20_1.png)!important; }
+a.PIN_1434423599893_pin_it_button_ja_20_gray { background-image: url(https://s-passets.pinimg.com/images/pidgets/pinit_bg_ja_rect_gray_20_1.png)!important; }
+a.PIN_1434423599893_pin_it_above_20 span.PIN_1434423599893_pin_it_button_count { background: transparent url(https://s-passets.pinimg.com/images/pidgets/count_north_white_rect_20_1.png) 0 0 no-repeat!important; background-size: 40px 29px!important; position: absolute!important; bottom: 21px!important; left: 0px!important; height: 29px!important; width: 40px!important; font: 12px Arial, Helvetica, sans-serif!important; line-height: 24px!important; text-indent: 0!important;}
+a.PIN_1434423599893_pin_it_button_20 span.PIN_1434423599893_pin_it_button_count { position: absolute!important; color: #777!important; text-align: center!important; text-indent: 0!important; }
+a.PIN_1434423599893_pin_it_beside_20 span.PIN_1434423599893_pin_it_button_count, a.PIN_1434423599893_pin_it_beside_20 span.PIN_1434423599893_pin_it_button_count i { background-color: transparent!important; background-repeat: no-repeat!important; background-image: url(https://s-passets.pinimg.com/images/pidgets/count_east_white_rect_20_1.png)!important; }
+a.PIN_1434423599893_pin_it_beside_20 span.PIN_1434423599893_pin_it_button_count { padding: 0 3px 0 10px!important; background-size: 45px 20px!important; background-position: 0 0!important; position: absolute!important; top: 0!important; left: 41px!important; height: 20px!important; font: 10px Arial, Helvetica, sans-serif!important; line-height: 20px!important; }
+a.PIN_1434423599893_pin_it_beside_20 span.PIN_1434423599893_pin_it_button_count i { background-position: 100% 0!important; position: absolute!important; top: 0!important; right: -2px!important; height: 20px!important; width: 2px!important; }
+a.PIN_1434423599893_pin_it_button_20.PIN_1434423599893_pin_it_above { margin-top: 20px!important; }
+a.PIN_1434423599893_pin_it_above_20_pad { margin-top: 30px!important; }
+a.PIN_1434423599893_pin_it_beside_20_pad { margin-right: 45px!important; }
+a.PIN_1434423599893_pin_it_button_28 { cursor: pointer!important; background-repeat: none!important; background-size: 56px 84px!important; height: 28px!important; padding: 0!important; vertical-align: baseline!important; text-decoration: none!important; width: 56px!important; background-position: 0 -28px }
+a.PIN_1434423599893_pin_it_button_28:hover { background-position: 0 0px }
+a.PIN_1434423599893_pin_it_button_28:active, a.PIN_1434423599893_pin_it_button_28.PIN_1434423599893_hazClick { background-position: 0 -56px }
+a.PIN_1434423599893_pin_it_button_inline_28 { cursor: pointer!important; position: relative!important; display: inline-block!important; }
+a.PIN_1434423599893_pin_it_button_floating_28 { cursor: pointer!important; position: absolute!important; }
+a.PIN_1434423599893_pin_it_above_28_pad { margin-top: 38px!important;}
+a.PIN_1434423599893_pin_it_beside_28_pad { margin-right: 50px!important;}
+a.PIN_1434423599893_pin_it_button_en_28_red { background-image: url(https://s-passets.pinimg.com/images/pidgets/pinit_bg_en_rect_red_28_1.png)!important; }
+a.PIN_1434423599893_pin_it_button_en_28_white { background-image: url(https://s-passets.pinimg.com/images/pidgets/pinit_bg_en_rect_white_28_1.png)!important; }
+a.PIN_1434423599893_pin_it_button_en_28_gray { background-image: url(https://s-passets.pinimg.com/images/pidgets/pinit_bg_en_rect_gray_28_1.png)!important; }
+a.PIN_1434423599893_pin_it_button_ja_28_red { background-image: url(https://s-passets.pinimg.com/images/pidgets/pinit_bg_ja_rect_red_28_1.png)!important; }
+a.PIN_1434423599893_pin_it_button_ja_28_white { background-image: url(https://s-passets.pinimg.com/images/pidgets/pinit_bg_ja_rect_white_28_1.png)!important; }
+a.PIN_1434423599893_pin_it_button_ja_28_gray { background-image: url(https://s-passets.pinimg.com/images/pidgets/pinit_bg_ja_rect_gray_28_1.png)!important; }
+a.PIN_1434423599893_pin_it_button_en_16_red_round, a.PIN_1434423599893_pin_it_button_en_32_red_round { background-repeat: none!important; margin: 0!important; padding: 0!important; vertical-align: baseline!important; text-decoration: none!important; }
+a.PIN_1434423599893_pin_it_button_en_16_red_round { height: 16px!important; width: 16px!important; background-size: 16px 16px!important; background-image: url(https://s-passets.pinimg.com/images/pidgets/pinit_bg_en_round_red_16_1.png)!important;}
+a.PIN_1434423599893_pin_it_button_en_32_red_round { height: 32px!important; width: 32px!important; background-size: 32px 32px!important; background-image: url(https://s-passets.pinimg.com/images/pidgets/pinit_bg_en_round_red_32_1.png)!important;}
+a.PIN_1434423599893_pin_it_button_inline_en_16_red_round, a.PIN_1434423599893_pin_it_button_inline_en_32_red_round { position: relative!important; display: inline-block!important; }
+a.PIN_1434423599893_pin_it_button_floating_en_16_red_round, a.PIN_1434423599893_pin_it_button_floating_en_32_red_round  { position: absolute!important; }
+a.PIN_1434423599893_pin_it_button_28 span.PIN_1434423599893_pin_it_button_count { position: absolute!important; color: #777!important; text-align: center!important; text-indent: 0!important; }
+a.PIN_1434423599893_pin_it_above_28 span.PIN_1434423599893_pin_it_button_count { background: transparent url(https://s-passets.pinimg.com/images/pidgets/count_north_white_rect_28_1.png) 0 0 no-repeat!important; background-size: 56px 37px!important; position: absolute!important; bottom: 29px!important; left: 0px!important; height: 37px!important; width: 56px!important; font: 15px Arial, Helvetica, sans-serif!important; line-height: 28px!important; text-indent: 0!important;}
+a.PIN_1434423599893_pin_it_beside_28 span.PIN_1434423599893_pin_it_button_count, a.PIN_1434423599893_pin_it_beside_28 span.PIN_1434423599893_pin_it_button_count i { background-color: transparent!important; background-repeat: no-repeat!important; background-image: url(https://s-passets.pinimg.com/images/pidgets/count_east_white_rect_28_1.png)!important; }
+a.PIN_1434423599893_pin_it_beside_28 span.PIN_1434423599893_pin_it_button_count { padding: 0 3px 0 10px!important; background-size: 63px 28px!important; background-position: 0 0!important; position: absolute!important; top: 0!important; left: 57px!important; height: 28px!important; font: 12px Arial, Helvetica, sans-serif!important; line-height: 28px!important; }
+a.PIN_1434423599893_pin_it_beside_28 span.PIN_1434423599893_pin_it_button_count i { background-position: 100% 0!important; position: absolute!important; top: 0!important; right: -2px!important; height: 28px!important; width: 2px!important; }
+a.PIN_1434423599893_pin_it_button_28.PIN_1434423599893_pin_it_above { margin-top: 28px!important; }
+a.PIN_1434423599893_follow_me_button, a.PIN_1434423599893_follow_me_button i { background-size: 200px 60px!important; background: transparent url(https://s-passets.pinimg.com/images/pidgets/bfs1.png) 0 0 no-repeat }
+a.PIN_1434423599893_follow_me_button { cursor: pointer!important; color: #444!important; display: inline-block!important; font: bold normal normal 11px/20px "Helvetica Neue",helvetica,arial,san-serif!important; height: 20px!important; margin: 0!important; padding: 0!important; position: relative!important; text-decoration: none!important; text-indent: 19px!important; vertical-align: baseline!important;}
+a.PIN_1434423599893_follow_me_button:hover { background-position: 0 -20px}
+a.PIN_1434423599893_follow_me_button:active  { background-position: 0 -40px}
+a.PIN_1434423599893_follow_me_button b { position: absolute!important; top: 3px!important; left: 3px!important; height: 14px!important; width: 14px!important; background-size: 14px 14px!important; background-image: url(https://s-passets.pinimg.com/images/pidgets/log1.png)!important; }
+a.PIN_1434423599893_follow_me_button i { position: absolute!important; top: 0!important; right: -4px!important; height: 20px!important; width: 4px!important; background-position: 100% 0px!important; }
+a.PIN_1434423599893_follow_me_button:hover i { background-position: 100% -20px!important;  }
+a.PIN_1434423599893_follow_me_button:active i { background-position: 100% -40px!important; }
+a.PIN_1434423599893_follow_me_button_28, a.PIN_1434423599893_follow_me_button_28 i { background-size: 400px 84px!important; background: transparent url(https://s-passets.pinimg.com/images/pidgets/bft1.png) 0 0 no-repeat }
+a.PIN_1434423599893_follow_me_button_28 { cursor: pointer!important; color: #444!important; display: inline-block!important; font: bold normal normal 13px/28px "Helvetica Neue",helvetica,arial,san-serif!important; height: 28px!important; margin: 0!important; padding: 0!important; position: relative!important; text-decoration: none!important; text-indent: 33px!important; vertical-align: baseline!important;}
+a.PIN_1434423599893_follow_me_button_28:hover { background-position: 0 -28px}
+a.PIN_1434423599893_follow_me_button_28:active  { background-position: 0 -56px}
+a.PIN_1434423599893_follow_me_button_28 b { position: absolute!important; top: 5px!important; left: 10px!important; height: 18px!important; width: 18px!important; background-size: 18px 18px!important; background-image: url(https://s-passets.pinimg.com/images/pidgets/smt1.png)!important; }
+a.PIN_1434423599893_follow_me_button_28 i { position: absolute!important; top: 0!important; right: -10px!important; height: 28px!important; width: 10px!important; background-position: 100% 0px!important; }
+a.PIN_1434423599893_follow_me_button_28:hover i { background-position: 100% -28px!important;  }
+a.PIN_1434423599893_follow_me_button_28:active i { background-position: 100% -56px!important; }
+span.PIN_1434423599893_embed_pin { -webkit-font-smoothing: antialiased!important; cursor: pointer!important; display: inline-block!important; text-align: center!important; overflow: hidden!important; vertical-align: top!important; width: 237px }
+span.PIN_1434423599893_embed_pin.PIN_1434423599893_medium { width: 345px!important; }
+span.PIN_1434423599893_embed_pin.PIN_1434423599893_large { width: 600px!important; }
+span.PIN_1434423599893_embed_pin img { border: 0!important; padding: 0!important; box-shadow: none!important; }
+span.PIN_1434423599893_embed_pin.PIN_1434423599893_fancy { background: #fff!important; box-shadow: 0 1px 3px rgba(0, 0, 0, .33)!important; border-radius: 3px!important; }
+span.PIN_1434423599893_embed_pin a.PIN_1434423599893_embed_pin_link { display: block!important;  margin: 0 auto!important; padding: 0!important; position: relative!important;  line-height: 0}
+span.PIN_1434423599893_embed_pin img.PIN_1434423599893_embed_pin_link_img { border: 0!important; margin: 0!important; padding: 0!important; border-bottom: 1px solid rgba(0, 0, 0, .09)!important;}
+span.PIN_1434423599893_embed_pin a.PIN_1434423599893_embed_pin_link i.PIN_1434423599893_repin { left: 12px!important; top: 12px!important; position: absolute!important; height: 20px!important; width: 40px!important; background-size: 40px 60px!important;  background: transparent url(https://s-passets.pinimg.com/images/pidgets/pinit_bg_en_rect_red_20_1.png) }
+span.PIN_1434423599893_embed_pin a.PIN_1434423599893_embed_pin_link i.PIN_1434423599893_repin_ja { left: 12px!important; top: 12px!important; position: absolute!important; height: 20px!important; width: 40px!important; background-size: 40px 60px!important; background: transparent url(https://s-passets.pinimg.com/images/pidgets/pinit_bg_ja_rect_red_20_1.png) }
+span.PIN_1434423599893_embed_pin a.PIN_1434423599893_embed_pin_link i.PIN_1434423599893_repin:hover, span.PIN_1434423599893_embed_pin a.PIN_1434423599893_embed_pin_link i.PIN_1434423599893_repin_ja:hover { background-position: 0 -20px!important; }
+span.PIN_1434423599893_embed_pin a.PIN_1434423599893_embed_pin_link i.PIN_1434423599893_repin.PIN_1434423599893_hazClick, span.PIN_1434423599893_embed_pin a.PIN_1434423599893_embed_pin_link i.PIN_1434423599893_repin_ja.PIN_1434423599893_hazClick { background-position: 0 -40px!important; }
+span.PIN_1434423599893_embed_pin a.PIN_1434423599893_embed_pin_link i.PIN_1434423599893_play { display: block!important; width: 50px!important; white-space: pre!important; font-family: "Helvetica Neue",helvetica,arial,san-serif!important; font-weight: bold!important; font-style: normal!important; font-size: 9px!important; line-height: 12px!important; margin: 0!important; position: absolute!important; bottom: 12px!important; left: 12px!important; text-decoration: none!important; background: rgba(0, 0, 0, .4)!important; color: rgba(255, 255, 255, 1)!important; border-radius: 13px!important; padding: 5px 0!important; box-shadow: 0 0 2px rgba(0, 0, 0, .2)!important; border: 2px solid rgba(255, 255, 255, .68)!important;}
+span.PIN_1434423599893_embed_pin a.PIN_1434423599893_embed_pin_link i.PIN_1434423599893_play:hover { background: rgba(0, 0, 0, .8)!important; color: #fff!important; }
+span.PIN_1434423599893_embed_pin span.PIN_1434423599893_embed_pin_desc { color: #363636!important; white-space: normal!important; border-bottom: 1px solid rgba(0, 0, 0, .09)!important;!important; display: block!important; font-family: "Helvetica Neue", arial, sans-serif!important; font-size: 13px!important; line-height: 17px!important; padding: 12px!important; text-align: left!important; }
+span.PIN_1434423599893_embed_pin span.PIN_1434423599893_embed_pin_attrib { color: #a8a8a8!important; font-family: "Helvetica Neue", sans-serif!important; font-size: 11px!important; line-height: 18px!important; margin-top: 12px!important; font-weight: bold!important; display: block!important;}
+span.PIN_1434423599893_embed_pin span.PIN_1434423599893_embed_pin_attrib img.PIN_1434423599893_embed_pin_attrib_icon { height: 16px!important; width: 16px!important; vertical-align: middle!important; padding: 0!important; margin: 0 5px 0 0!important; float: left!important;}
+span.PIN_1434423599893_embed_pin span.PIN_1434423599893_embed_pin_attrib a { color: #a8a8a8!important; text-decoration: none!important;}
+span.PIN_1434423599893_embed_pin span.PIN_1434423599893_embed_pin_stats { display: block!important; }
+span.PIN_1434423599893_embed_pin span.PIN_1434423599893_embed_pin_stats span.PIN_1434423599893_embed_pin_stats_repin_count, span.PIN_1434423599893_embed_pin span.PIN_1434423599893_embed_pin_stats span.PIN_1434423599893_embed_pin_stats_like_count { display: inline-block!important; padding-left: 17px!important; padding-right: 10px!important; color: #a8a8a8!important; font-family: "Helvetica Neue", sans-serif!important; font-size: 11px!important; line-height: 12px!important; margin-top: 12px!important; font-weight: bold!important; }
+span.PIN_1434423599893_embed_pin span.PIN_1434423599893_embed_pin_stats span.PIN_1434423599893_embed_pin_stats_repin_count { background: url(data:image/png!important;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAALCAAAAABq7uO+AAAASklEQVQI10WNMQrAMBRCvf/Z3pQcImPplsIPdqhNXOSJqLxVtnWQsuUO9IM3cHlV8dSSDZQHAOPH2YA2FU+qtH7MRhaVh/xt/PQCEW6N4EV+CPEAAAAASUVORK5CYII=) 0 0 no-repeat!important; }
+span.PIN_1434423599893_embed_pin span.PIN_1434423599893_embed_pin_stats span.PIN_1434423599893_embed_pin_stats_like_count { background: url(data:image/png!important;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAKCAAAAAClR+AmAAAAUElEQVR4AT2HMQpFIQwEc/+zbXhFLBW8QUihIAT2E8Q/xe6M0Jv2zK7NKUcBzAlAjzjqtdZl4c8S2nOjMPS6BoWMr/wLVnAbYJs3mGMkXzx+OeRqUf5HHRoAAAAASUVORK5CYII=) 0 2px no-repeat!important; }
+span.PIN_1434423599893_embed_pin span.PIN_1434423599893_embed_pin_text { padding: 12px!important; position: relative!important; text-decoration: none!important; display: block!important; font-weight: bold!important; color: #b7b7b7!important; font-family: "Helvetica Neue", arial, sans-serif!important; font-size: 11px!important; line-height: 14px!important; height: 30px!important; text-align: left!important; }
+span.PIN_1434423599893_embed_pin span.PIN_1434423599893_embed_pin_text img.PIN_1434423599893_embed_pin_text_avatar { border-radius: 15px!important; border: none!important; overflow: hidden!important; height: 30px!important; width: 30px!important; vertical-align: middle!important; margin: 0 8px 12px 0!important; float: left!important;}
+span.PIN_1434423599893_embed_pin span.PIN_1434423599893_embed_pin_text span.PIN_1434423599893_embed_pin_text_container_pinner, span.PIN_1434423599893_embed_pin a.PIN_1434423599893_embed_pin_text span.PIN_1434423599893_embed_pin_text_container_board { display: block!important; width: 175px!important; white-space: nowrap!important; overflow: hidden!important; text-overflow: ellipsis!important;}
+span.PIN_1434423599893_embed_pin span.PIN_1434423599893_embed_pin_text span.PIN_1434423599893_embed_pin_text_container_pinner { color: #777!important;}
+span.PIN_1434423599893_embed_grid { display: inline-block!important; margin: 0!important; padding:10px 0!important; position: relative!important; text-align: center}
+span.PIN_1434423599893_embed_grid.PIN_1434423599893_fancy { background: #fff!important; box-shadow: 0 1px 3px rgba(0, 0, 0, .33)!important; border-radius: 3px!important; }
+span.PIN_1434423599893_embed_grid span.PIN_1434423599893_embed_grid_hd { display: block!important; margin: 0 10px!important; padding: 0!important; height: 45px!important; position: relative!important;}
+span.PIN_1434423599893_embed_grid span.PIN_1434423599893_embed_grid_hd a.PIN_1434423599893_avatar { position: absolute!important; top: 0!important; left: 0!important; height: 36px!important; width: 36px!important; }
+span.PIN_1434423599893_embed_grid span.PIN_1434423599893_embed_grid_hd a.PIN_1434423599893_avatar img { position: relative!important; height: 36px!important; width: 36px!important; min-height: 36px!important; min-width: 36px!important; margin: 0!important; padding: 0!important; border-radius: 3px!important; border: none!important;}
+span.PIN_1434423599893_embed_grid span.PIN_1434423599893_embed_grid_hd a { text-decoration: none!important; border: none!important; background: transparent!important; cursor: pointer!important; white-space: nowrap!important; position: absolute!important; left: 44px!important; text-align: left!important; overflow: hidden!important; text-overflow: ellipsis!important; }
+span.PIN_1434423599893_embed_grid span.PIN_1434423599893_embed_grid_hd a:hover { text-decoration: none!important; background: inherit!important; }
+span.PIN_1434423599893_embed_grid span.PIN_1434423599893_embed_grid_hd a:active { text-decoration: none!important; background: inherit!important; }
+span.PIN_1434423599893_embed_grid span.PIN_1434423599893_embed_grid_hd a.PIN_1434423599893_embed_grid_first { top: 2px!important; font-family: helvetica, sans-serif!important; font-weight: bold!important; color:#333!important; font-size: 14px!important; line-height: 16px!important; }
+span.PIN_1434423599893_embed_grid span.PIN_1434423599893_embed_grid_hd a.PIN_1434423599893_embed_grid_second { bottom: 11px!important; font-family: helvetica, sans-serif!important; color:#8e8e8e!important; font-size: 12px!important; line-height: 14px!important; }
+span.PIN_1434423599893_embed_grid span.PIN_1434423599893_embed_grid_hd a.PIN_1434423599893_embed_grid_mid { top: 12px!important; font-family: helvetica, sans-serif!important; font-weight: bold!important; color:#333!important; font-size: 14px!important; line-height: 16px!important; }
+span.PIN_1434423599893_embed_grid span.PIN_1434423599893_embed_grid_bd { display:block!important; margin: 0 10px!important; border-radius: 2px!important; position: relative!important; overflow: hidden }
+span.PIN_1434423599893_embed_grid span.PIN_1434423599893_embed_grid_scrolling_okay { overflow: auto!important; }
+span.PIN_1434423599893_embed_grid span.PIN_1434423599893_embed_grid_bd span.PIN_1434423599893_embed_grid_ct { display:block!important; position: relative!important; overflow: hidden!important; }
+span.PIN_1434423599893_embed_grid span.PIN_1434423599893_embed_grid_bd a.PIN_1434423599893_embed_grid_th { cursor: pointer!important; display: inline-block!important; position: absolute!important; overflow: hidden!important; }
+span.PIN_1434423599893_embed_grid span.PIN_1434423599893_embed_grid_bd a.PIN_1434423599893_embed_grid_th::before { position: absolute!important; content:""!important; z-index: 2!important; top: 0!important; left: 0!important; right: 0!important; bottom: 0!important; box-shadow: inset 0 0 2px #888!important; }
+span.PIN_1434423599893_embed_grid span.PIN_1434423599893_embed_grid_bd a.PIN_1434423599893_embed_grid_th img.PIN_1434423599893_embed_grid_img { border: none!important; margin-left: 0!important; margin-right: 0!important; margin-bottom: 0!important; padding: 0!important;position: absolute!important; top: 50%!important; left: 0!important; }
+a.PIN_1434423599893_embed_grid_ft { cursor: pointer!important; text-shadow: 0 1px #fff!important; display: block!important; text-align: center!important; border: 1px solid #ccc!important; margin: 10px 10px 0!important; height: 31px!important; line-height: 30px!important;border-radius: 2px!important; text-decoration: none!important; font-family: Helvetica!important; font-weight: bold!important; font-size: 13px!important; color: #746d6a!important; background: #f4f4f4 url(https://s-passets.pinimg.com/images/pidgets/board_button_link.png) 0 0 repeat-x}
+a.PIN_1434423599893_embed_grid_ft:hover { text-decoration: none!important; background: #fefefe url(https://s-passets.pinimg.com/images/pidgets/board_button_hover.png) 0 0 repeat-x}
+a.PIN_1434423599893_embed_grid_ft:active { text-decoration: none!important; background: #e4e4e4 url(https://s-passets.pinimg.com/images/pidgets/board_button_active.png) 0 0 repeat-x}
+a.PIN_1434423599893_embed_grid_ft span.PIN_1434423599893_embed_grid_ft_logo { vertical-align: top!important; display: inline-block!important; margin-left: 2px!important; height: 30px!important; width: 66px!important; background: transparent url(https://s-passets.pinimg.com/images/pidgets/board_button_logo.png) 50% 48% no-repeat!important; }
+.PIN_1434423599893_hidden { display:none!important; }</style><script async="" type="text/javascript" src="./modal_files/count.js"></script><script src="./modal_files/ga.js" async="true"></script><script type="text/javascript" id="_bsaPRO_js" src="./modal_files/saved_resource" async="async"></script><script async="" type="text/javascript" src="./modal_files/pubads_impl_63.js"></script><style type="text/css">.fb_hidden{position:absolute;top:-10000px;z-index:10001}.fb_invisible{display:none}.fb_reset{background:none;border:0;border-spacing:0;color:#000;cursor:auto;direction:ltr;font-family:"lucida grande", tahoma, verdana, arial, sans-serif;font-size:11px;font-style:normal;font-variant:normal;font-weight:normal;letter-spacing:normal;line-height:1;margin:0;overflow:visible;padding:0;text-align:left;text-decoration:none;text-indent:0;text-shadow:none;text-transform:none;visibility:visible;white-space:normal;word-spacing:normal}.fb_reset>div{overflow:hidden}.fb_link img{border:none}
+.fb_dialog{background:rgba(82, 82, 82, .7);position:absolute;top:-10000px;z-index:10001}.fb_reset .fb_dialog_legacy{overflow:visible}.fb_dialog_advanced{padding:10px;-moz-border-radius:8px;-webkit-border-radius:8px;border-radius:8px}.fb_dialog_content{background:#fff;color:#333}.fb_dialog_close_icon{background:url(http://static.ak.fbcdn.net/rsrc.php/v2/yq/r/IE9JII6Z1Ys.png) no-repeat scroll 0 0 transparent;_background-image:url(http://static.ak.fbcdn.net/rsrc.php/v2/yL/r/s816eWC-2sl.gif);cursor:pointer;display:block;height:15px;position:absolute;right:18px;top:17px;width:15px}.fb_dialog_mobile .fb_dialog_close_icon{top:5px;left:5px;right:auto}.fb_dialog_padding{background-color:transparent;position:absolute;width:1px;z-index:-1}.fb_dialog_close_icon:hover{background:url(http://static.ak.fbcdn.net/rsrc.php/v2/yq/r/IE9JII6Z1Ys.png) no-repeat scroll 0 -15px transparent;_background-image:url(http://static.ak.fbcdn.net/rsrc.php/v2/yL/r/s816eWC-2sl.gif)}.fb_dialog_close_icon:active{background:url(http://static.ak.fbcdn.net/rsrc.php/v2/yq/r/IE9JII6Z1Ys.png) no-repeat scroll 0 -30px transparent;_background-image:url(http://static.ak.fbcdn.net/rsrc.php/v2/yL/r/s816eWC-2sl.gif)}.fb_dialog_loader{background-color:#f6f7f8;border:1px solid #606060;font-size:24px;padding:20px}.fb_dialog_top_left,.fb_dialog_top_right,.fb_dialog_bottom_left,.fb_dialog_bottom_right{height:10px;width:10px;overflow:hidden;position:absolute}.fb_dialog_top_left{background:url(http://static.ak.fbcdn.net/rsrc.php/v2/ye/r/8YeTNIlTZjm.png) no-repeat 0 0;left:-10px;top:-10px}.fb_dialog_top_right{background:url(http://static.ak.fbcdn.net/rsrc.php/v2/ye/r/8YeTNIlTZjm.png) no-repeat 0 -10px;right:-10px;top:-10px}.fb_dialog_bottom_left{background:url(http://static.ak.fbcdn.net/rsrc.php/v2/ye/r/8YeTNIlTZjm.png) no-repeat 0 -20px;bottom:-10px;left:-10px}.fb_dialog_bottom_right{background:url(http://static.ak.fbcdn.net/rsrc.php/v2/ye/r/8YeTNIlTZjm.png) no-repeat 0 -30px;right:-10px;bottom:-10px}.fb_dialog_vert_left,.fb_dialog_vert_right,.fb_dialog_horiz_top,.fb_dialog_horiz_bottom{position:absolute;background:#525252;filter:alpha(opacity=70);opacity:.7}.fb_dialog_vert_left,.fb_dialog_vert_right{width:10px;height:100%}.fb_dialog_vert_left{margin-left:-10px}.fb_dialog_vert_right{right:0;margin-right:-10px}.fb_dialog_horiz_top,.fb_dialog_horiz_bottom{width:100%;height:10px}.fb_dialog_horiz_top{margin-top:-10px}.fb_dialog_horiz_bottom{bottom:0;margin-bottom:-10px}.fb_dialog_iframe{line-height:0}.fb_dialog_content .dialog_title{background:#6d84b4;border:1px solid #3a5795;color:#fff;font-size:14px;font-weight:bold;margin:0}.fb_dialog_content .dialog_title>span{background:url(http://static.ak.fbcdn.net/rsrc.php/v2/yd/r/Cou7n-nqK52.gif) no-repeat 5px 50%;float:left;padding:5px 0 7px 26px}body.fb_hidden{-webkit-transform:none;height:100%;margin:0;overflow:visible;position:absolute;top:-10000px;left:0;width:100%}.fb_dialog.fb_dialog_mobile.loading{background:url(http://static.ak.fbcdn.net/rsrc.php/v2/ya/r/3rhSv5V8j3o.gif) white no-repeat 50% 50%;min-height:100%;min-width:100%;overflow:hidden;position:absolute;top:0;z-index:10001}.fb_dialog.fb_dialog_mobile.loading.centered{max-height:590px;min-height:590px;max-width:500px;min-width:500px}#fb-root #fb_dialog_ipad_overlay{background:rgba(0, 0, 0, .45);position:absolute;left:0;top:0;width:100%;min-height:100%;z-index:10000}#fb-root #fb_dialog_ipad_overlay.hidden{display:none}.fb_dialog.fb_dialog_mobile.loading iframe{visibility:hidden}.fb_dialog_content .dialog_header{-webkit-box-shadow:white 0 1px 1px -1px inset;background:-webkit-gradient(linear, 0% 0%, 0% 100%, from(#738ABA), to(#2C4987));border-bottom:1px solid;border-color:#1d4088;color:#fff;font:14px Helvetica, sans-serif;font-weight:bold;text-overflow:ellipsis;text-shadow:rgba(0, 30, 84, .296875) 0 -1px 0;vertical-align:middle;white-space:nowrap}.fb_dialog_content .dialog_header table{-webkit-font-smoothing:subpixel-antialiased;height:43px;width:100%}.fb_dialog_content .dialog_header td.header_left{font-size:12px;padding-left:5px;vertical-align:middle;width:60px}.fb_dialog_content .dialog_header td.header_right{font-size:12px;padding-right:5px;vertical-align:middle;width:60px}.fb_dialog_content .touchable_button{background:-webkit-gradient(linear, 0% 0%, 0% 100%, from(#4966A6), color-stop(.5, #355492), to(#2A4887));border:1px solid #2f477a;-webkit-background-clip:padding-box;-webkit-border-radius:3px;-webkit-box-shadow:rgba(0, 0, 0, .117188) 0 1px 1px inset, rgba(255, 255, 255, .167969) 0 1px 0;display:inline-block;margin-top:3px;max-width:85px;line-height:18px;padding:4px 12px;position:relative}.fb_dialog_content .dialog_header .touchable_button input{border:none;background:none;color:#fff;font:12px Helvetica, sans-serif;font-weight:bold;margin:2px -12px;padding:2px 6px 3px 6px;text-shadow:rgba(0, 30, 84, .296875) 0 -1px 0}.fb_dialog_content .dialog_header .header_center{color:#fff;font-size:16px;font-weight:bold;line-height:18px;text-align:center;vertical-align:middle}.fb_dialog_content .dialog_content{background:url(http://static.ak.fbcdn.net/rsrc.php/v2/y9/r/jKEcVPZFk-2.gif) no-repeat 50% 50%;border:1px solid #555;border-bottom:0;border-top:0;height:150px}.fb_dialog_content .dialog_footer{background:#f6f7f8;border:1px solid #555;border-top-color:#ccc;height:40px}#fb_dialog_loader_close{float:left}.fb_dialog.fb_dialog_mobile .fb_dialog_close_button{text-shadow:rgba(0, 30, 84, .296875) 0 -1px 0}.fb_dialog.fb_dialog_mobile .fb_dialog_close_icon{visibility:hidden}
+.fb_iframe_widget{display:inline-block;position:relative}.fb_iframe_widget span{display:inline-block;position:relative;text-align:justify}.fb_iframe_widget iframe{position:absolute}.fb_iframe_widget_fluid_desktop,.fb_iframe_widget_fluid_desktop span,.fb_iframe_widget_fluid_desktop iframe{max-width:100%}.fb_iframe_widget_fluid_desktop iframe{min-width:220px;position:relative}.fb_iframe_widget_lift{z-index:1}.fb_hide_iframes iframe{position:relative;left:-10000px}.fb_iframe_widget_loader{position:relative;display:inline-block}.fb_iframe_widget_fluid{display:inline}.fb_iframe_widget_fluid span{width:100%}.fb_iframe_widget_loader iframe{min-height:32px;z-index:2;zoom:1}.fb_iframe_widget_loader .FB_Loader{background:url(http://static.ak.fbcdn.net/rsrc.php/v2/y9/r/jKEcVPZFk-2.gif) no-repeat;height:32px;width:32px;margin-left:-16px;position:absolute;left:50%;z-index:4}</style></head>
+<body class="single single-post postid-36526 single-format-standard" data-twttr-rendered="true">
+
+<header id="header-wrap">
+  <div class="long-art"></div>
+  <div class="content-block">
+    <a href="http://www.webdesignerdepot.com/" id="logo">
+      <span id="logo-svg-wrap">
+<svg version="1.1" id="logo_Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="60px" height="50px" viewBox="0 0 60 50" xml:space="preserve" shape-rendering="geometricPrecision">
+
+  
+   <path id="logo_svg_path" fill="#000000" stroke-width="1" stroke="#000000" d="M46.155,35.784l0.783-0.175c1.11,0.956,2.389,1.462,3.696,1.462c3.54,0,7.865-4.334,7.865-9.393
+	c0-0.779-0.067-1.143-0.466-1.232c-0.04-0.009-0.079-0.014-0.114-0.014c-0.391,0-0.739,0.682-0.96,1.249
+	c-0.021,0.052-2.06,5.167-5.46,5.167c-1.433,0-2.526-0.734-3.248-2.182l-0.023-0.392l0.027-0.077
+	c1.284-4.095,2.133-8.406,2.391-12.14c0.311-4.523-0.688-8.376-2.736-10.571c-1.108-1.187-2.468-1.814-3.931-1.814
+	c-0.417,0-0.843,0.052-1.266,0.154c-4.757,1.151-6.653,6.125-5.797,15.207c0.336,3.567,2.021,6.903,4.873,9.649l0.118,0.546
+	c-2.555,6.403-5.78,10.227-8.629,10.227c-1.543,0-2.875-1.188-3.849-3.435l0.036-0.466c2.774-4.402,4.482-9.189,4.569-12.805
+	c0.062-2.577-0.317-4.303-1.124-5.129c-0.443-0.454-1.005-0.665-1.769-0.665c-2.688,0-5.953,3.333-6.31,12.727
+	c-0.077,2.037-0.027,3.938,0.148,5.652l-0.143,0.403c-1.25,1.256-3.062,2.752-4.599,2.752l-0.112-0.002
+	c-0.63-0.031-1.184-0.299-1.602-0.771c-0.853-0.966-1.191-2.716-1.008-5.202c0.26-3.534,1.525-7.739,2.755-11.828
+	c1.108-3.682,2.154-7.159,2.473-10.079c0.371-3.396-0.345-6.207-2.07-8.129c-1.595-1.779-3.948-2.72-6.806-2.72
+	C7.396,1.761,1.5,8.833,1.5,16.599c0,4.739,1.81,7.042,5.534,7.042c2.912,0,4.982-1.708,5.151-4.249
+	c0.11-1.652-0.268-2.548-0.668-3.497c-0.362-0.856-0.736-1.742-0.736-3.193c0-2.251,1.085-3.596,2.901-3.596
+	c0.092,0,0.186,0.003,0.283,0.011c1.827,0.136,2.201,1.772,2.201,4.187c0,2.276-1.248,6.607-2.573,11.203
+	c-1.543,5.354-3.138,10.89-3.138,14.247c0,6.182,3.153,8.997,6.083,8.997c2.675,0,5.83-1.761,8.883-4.957l0.826,0.162
+	c1.366,3.456,3.67,5.283,6.665,5.283C39.601,48.239,44.08,40.436,46.155,35.784z M44.788,12.204
+	c0.568,0.618,0.748,2.083,0.552,4.476c-0.224,2.732-0.735,5.693-1.48,8.561l-0.913,0.132c-0.842-1.4-1.327-2.847-1.403-4.182
+	c-0.355-6.17,0.926-8.232,1.492-8.831c0.387-0.41,0.75-0.496,0.986-0.496C44.322,11.863,44.58,11.978,44.788,12.204z"></path>
+  
+</svg>  
+</span>    </a>
+    
+     
+          
+    <nav id="main-menu">
+    
+      <div class="mm-parent-item">
+        
+        <a class="mm-item">Articles</a>
+        
+        <span id="mm-lin-icon" class="icon-menu"></span>
+        
+        <div class="submenu-item">
+           <div class="submenu-content">
+           <span class="submenu-hit-area"></span>
+           <ul class="drop-menu-list">
+<li>
+  <a class="parent-category-lnk" href="http://www.webdesignerdepot.com/category/branding">Branding</a>
+ 
+</li>
+<li>
+  <a class="parent-category-lnk" href="http://www.webdesignerdepot.com/category/inspiration">Inspiration</a>
+ 
+</li>
+<li>
+  <a class="parent-category-lnk" href="http://www.webdesignerdepot.com/category/business">Business</a>
+ 
+</li>
+<li>
+  <a class="parent-category-lnk" href="http://www.webdesignerdepot.com/category/javascript">JavaScript</a>
+ 
+</li>
+<li>
+  <a class="parent-category-lnk" href="http://www.webdesignerdepot.com/category/css">CSS</a>
+ 
+</li>
+<li>
+  <a class="parent-category-lnk" href="http://www.webdesignerdepot.com/category/marketing">Marketing</a>
+ 
+</li>
+<li>
+  <a class="parent-category-lnk" href="http://www.webdesignerdepot.com/category/code-demos">Code Demos</a>
+ 
+</li>
+<li>
+  <a class="parent-category-lnk" href="http://www.webdesignerdepot.com/category/mobile">Mobile</a>
+ 
+</li>
+<li>
+  <a class="parent-category-lnk" href="http://www.webdesignerdepot.com/category/comics">Comics</a>
+ 
+</li>
+<li>
+  <a class="parent-category-lnk" href="http://www.webdesignerdepot.com/category/news">News</a>
+ 
+</li>
+<li>
+  <a class="parent-category-lnk" href="http://www.webdesignerdepot.com/category/contests">Contests</a>
+ 
+</li>
+<li>
+  <a class="parent-category-lnk" href="http://www.webdesignerdepot.com/category/resources">Resources</a>
+ 
+</li>
+<li>
+  <a class="parent-category-lnk" href="http://www.webdesignerdepot.com/category/deals-2">Deals</a>
+ 
+</li>
+<li>
+  <a class="parent-category-lnk" href="http://www.webdesignerdepot.com/category/social-media">Social Media</a>
+ 
+</li>
+<li>
+  <a class="parent-category-lnk" href="http://www.webdesignerdepot.com/category/design">Design</a>
+ 
+</li>
+<li>
+  <a class="parent-category-lnk" href="http://www.webdesignerdepot.com/category/sponsored">Sponsored</a>
+ 
+</li>
+<li>
+  <a class="parent-category-lnk" href="http://www.webdesignerdepot.com/category/freebies">Freebies</a>
+ 
+</li>
+<li>
+  <a class="parent-category-lnk" href="http://www.webdesignerdepot.com/category/typography">Typography</a>
+ 
+</li>
+<li>
+  <a class="parent-category-lnk" href="http://www.webdesignerdepot.com/category/funny">Funny</a>
+ 
+</li>
+<li>
+  <a class="parent-category-lnk" href="http://www.webdesignerdepot.com/category/ux-design-2">UX Design</a>
+ 
+</li>
+<li>
+  <a class="parent-category-lnk" href="http://www.webdesignerdepot.com/category/html-5">HTML</a>
+ 
+</li>
+<li>
+  <a class="parent-category-lnk" href="http://www.webdesignerdepot.com/category/usability">Usability</a>
+ 
+</li>
+<li>
+  <a class="parent-category-lnk" href="http://www.webdesignerdepot.com/category/how-to">How To</a>
+ 
+</li>
+<li>
+  <a class="parent-category-lnk" href="http://www.webdesignerdepot.com/category/web-development">Web Development</a>
+ 
+</li>
+<li>
+  <a class="parent-category-lnk" href="http://www.webdesignerdepot.com/category/inspiration">Inspiration</a>
+ 
+</li>
+<li>
+  <a class="parent-category-lnk" href="http://www.webdesignerdepot.com/category/wordpress">WordPress</a>
+ 
+</li>
+
+<li><a class="parent-category-lnk" href="http://www.webdesignerdepot.com/categories">All categories</a></li>
+</ul>           </div> <!--submenu-content -->
+         </div>  
+      </div>
+      <a class="mm-item" href="http://www.webdesignerdepot.com/category/freebies">Freebies</a>
+      
+      <div class="mm-parent-item" id="mm-item-deals"><a data-title="Deals for Developers and Designers" class="mm-item" href="http://www.webdesignerdepot.com/deals">Deals</a>
+        
+        <div class="submenu-item">
+           <div class="submenu-content">
+           <span class="submenu-hit-area"></span>
+           <ul class="drop-menu-list">
+     <li>
+      <a class="parent-category-lnk" href="http://www.webdesignerdepot.com/deals?category=bundles">Bundles</a>
+    </li>
+        <li>
+      <a class="parent-category-lnk" href="http://www.webdesignerdepot.com/deals?category=courses">Courses</a>
+    </li>
+        <li>
+      <a class="parent-category-lnk" href="http://www.webdesignerdepot.com/deals?category=ebooks">eBooks</a>
+    </li>
+        <li>
+      <a class="parent-category-lnk" href="http://www.webdesignerdepot.com/deals?category=fonts">Fonts</a>
+    </li>
+        <li>
+      <a class="parent-category-lnk" href="http://www.webdesignerdepot.com/deals?category=graphics">Graphics</a>
+    </li>
+        <li>
+      <a class="parent-category-lnk" href="http://www.webdesignerdepot.com/deals?category=icons">Icons</a>
+    </li>
+        <li>
+      <a class="parent-category-lnk" href="http://www.webdesignerdepot.com/deals?category=scripts-plugins">Plugins</a>
+    </li>
+        <li>
+      <a class="parent-category-lnk" href="http://www.webdesignerdepot.com/deals?category=software">Software</a>
+    </li>
+        <li>
+      <a class="parent-category-lnk" href="http://www.webdesignerdepot.com/deals?category=templates-themes">Themes</a>
+    </li>
+                    
+
+    <li><a class="parent-category-lnk" href="http://www.webdesignerdepot.com/deals">All deals</a></li>
+</ul>
+           </div> <!--submenu-content -->
+         </div>  
+      </div>
+      
+       
+       <a class="mm-item" href="http://www.webdesignernews.com/" style="color:#f8b147;">News</a>
+
+    
+    </nav>
+         
+    
+   
+    
+    <form method="get" action="http://www.webdesignerdepot.com/" id="search-form">
+      <div id="search-wrap">
+        <input name="s" id="search-field" value="" placeholder="" autocomplete="off">
+      </div>
+      <a href="http://www.webdesignerdepot.com/2012/10/creating-a-modal-window-with-html5-and-css3/#" class="icon-search" id="open-search-btn"></a>
+      
+    </form>
+    
+     <div id="header-social-icons">
+
+<a class="header-social-lnk fsl-fb" href="https://www.facebook.com/webdesignerdepot">
+<span class="header-social-icon icon-facebook"></span>
+</a>
+
+<a class="header-social-lnk fsl-tw" href="http://twitter.com/designerdepot">
+<span class="header-social-icon icon-twitter"></span>
+</a>
+
+<a class="header-social-lnk fsl-rss" href="http://feeds2.feedburner.com/webdesignerdepot?format=html">
+  <span class="header-social-icon icon-rss"></span>
+</a>
+
+</div>   
+
+<div id="header-socials">
+
+          					<span class="fb-home-btn">
+                        
+	  <a class="fb-stub self-handle" href="javascript:void(0);" data-href="http://www.webdesignerdepot.com/2012/10/creating-a-modal-window-with-html5-and-css3/" data-title="Creating a modal window with HTML5 &amp; CSS3" data-shares="407">Like
+        <span class="fb-stub-arr"></span>
+      </a>          </span>
+          
+          <span class="twitter-home-btn">
+                        
+	<a data-shares="522" class="tw-stub" href="https://twitter.com/intent/tweet?original_referer=http%3A%2F%2Fwww.webdesignerdepot.com%2F&via=designerdepot&text=Creating+a+modal+window+with+HTML5+%26amp%3B+CSS3&source=tweetbutton&url=http://www.webdesignerdepot.com/2012/10/creating-a-modal-window-with-html5-and-css3/" target="_blank">Tweet
+        <span class="tw-stub-ico"></span>
+        <span class="tw-stub-arr"></span>
+    </a>          </span>
+          
+          <div class="top-shares-drop-item">
+            <span class="icon-dot-3"></span>
+             <div class="hpop-shares">
+             <span class="shirw-stub"></span>
+             <canvas class="hpop-shares-trian" width="14" height="7"></canvas>
+                          
+             <div class="hp-share-i">
+             <a class="gplus-stub" data-url="http://www.webdesignerdepot.com/2012/10/creating-a-modal-window-with-html5-and-css3/" data-shares="147" href="javascript:;"><span class="ro"></span>Share</a>             </div>
+             <div class="hp-share-i">
+             <a class="linkedin-stub" data-url="http://www.webdesignerdepot.com/2012/10/creating-a-modal-window-with-html5-and-css3/" data-shares="23" href="javascript:;"><span class="lishar"></span>Share</a>             </div>
+             
+             <div class="hp-share-i">
+             
+	<ul class="suHostedBadge"><li>
+	<a class="logo" target="_top" onclick="javascript:openSuPopup(&#39;http%3A%2F%2Fwww.webdesignerdepot.com%2F2012%2F10%2Fcreating-a-modal-window-with-html5-and-css3%2F&#39;);" href="javascript:;">StumbleUpon</a></li>
+	<li><a class="count" target="_top" onclick="javascript:openSuPopup(&#39;http%3A%2F%2Fwww.webdesignerdepot.com%2F2012%2F10%2Fcreating-a-modal-window-with-html5-and-css3%2F&#39;);" href="javascript:void(0);">2</a></li></ul>
+	             </div>
+             
+             <div class="hp-share-i">
+             <div class="buffer-horizontal">
+  <span class="bb"><a class="buffer_button" target="_blank" href="https://bufferapp.com/add?url=http%3A%2F%2Fwww.webdesignerdepot.com%2F2012%2F10%2Fcreating-a-modal-window-with-html5-and-css3%2F&count=horizontal&placement=button&&utm_medium=buffer_button&utm_campaign=buffer&source=button"><span>Buffer</span></a></span>
+  <a class="bb-count buffer_count_box" target="_blank" href="https://bufferapp.com/add?url=http%3A%2F%2Fwww.webdesignerdepot.com%2F2012%2F10%2Fcreating-a-modal-window-with-html5-and-css3%2F&count=horizontal&placement=button&utm_medium=buffer_button&utm_campaign=buffer&source=button"><span class="buffer_count">39</span></a>
+</div>             </div>
+             </div>
+             
+      </div>            
+          </div>
+							
+</div>
+
+</header>
+  
+
+
+<div id="main-wrap" style="visibility: visible; opacity: 1;">
+  
+  <div class="content-block" id="mw-block" style="visibility: visible; opacity: 1;">
+
+       
+  <div id="content-wrap" style="visibility: visible; opacity: 1;">
+    <div id="content" style="visibility: visible; opacity: 1;">
+      <div id="face">
+      
+      
+
+
+
+		<div class="singlepage old-singlepage">
+     
+				
+        <div class="entry-wrap">
+        
+        
+        
+				<div class="entry">
+          
+          
+                      <header id="single-title-wrap">
+            <div id="single-title-block">
+                 
+           <h1 class="new-single-title">
+			        Creating a modal window with HTML5 &amp; CSS3	          </h1>
+             
+            <div class="single-meta-wrap">
+<div class="single-meta-line"></div>
+
+<div class="single-meta">
+   
+        
+                                 <span class="new-single-author">
+                            By
+                            <a data-title="Articles by Keenan Payne" href="http://www.webdesignerdepot.com/author/Keenan-Payne">Keenan Payne</a>
+            </span>
+            <span class="sm-dot">·</span>
+                        
+            
+              <a href="http://www.webdesignerdepot.com/category/css/">CSS</a>, <a href="http://www.webdesignerdepot.com/category/html-5/">HTML</a>, <a href="http://www.webdesignerdepot.com/category/web-design-3/">Web Design</a>              
+                
+                <span class="sm-dot">·</span>
+              
+                            
+                
+              <a href="http://www.webdesignerdepot.com/2012/10/2" class="ns-item-date">
+                Oct 2, 2012              </a>
+   </div>
+</div>           </div>
+           </header> 
+                   
+          
+          
+                           
+        
+               
+         
+          
+                       
+                      
+         
+               
+<article class="entry-content">    
+
+        <div id="special-wdd-ads-block" style="display:none;">
+    
+    </div>
+           
+        
+        
+					
+    										
+
+<p class="single-first-p">Modal boxes are a frequently utilized tool in the web developer’s arsenal. Used for, amongst many things, login/register forms; advertisements; or just notifications to the user.</p>
+<p>However despite the fact that modal windows frequently contain mission critical information, they are routinely created with JavaScript, which does not sit well with the best-practices of progressive enhancement or graceful degration.</p>
+<p>This doesn’t need to be a problem, because HTML5 &amp; CSS3 allow us to create modal windows with ease.</p>
+<p class="fixed-empty-p"></p><p class="fixed-empty-p">&nbsp;</p><h2>Demo</h2>
+<p>What we are going to do is use CSS3’s transition, opacity, pointer-event, and background gradient properties to create a very beautiful and functional modal box.</p>
+<p>You can <a href="http://netdna.webdesignerdepot.com/uploads7/creating-a-modal-window-with-html5-and-css3/demo.html">view a demo here</a>.</p>
+<p class="fixed-empty-p"></p><p class="fixed-empty-p">&nbsp;</p><h2>The HTML</h2>
+<p>The first step to creating our modal box is this short but sweet markup:&nbsp;</p>
+<div class="pre-wrap">
+<pre class=" language-markup"><code class=" language-markup"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>a</span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>#openModal<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>Open Modal<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>a</span><span class="token punctuation">&gt;</span></span><span class="token lf">
+</span><span class="token lf">
+</span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>openModal<span class="token punctuation">"</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>modalDialog<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span><span class="token lf">
+</span><span class="token tab">	</span><span class="token lf">
+</span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span></code></pre>
+</div>
+<p>As you can see, we just have a simple link that says “Open Modal” and links to our <em>openModal</em> div that is placed right below it. We are doing all of our styling here with classes, so we use the ID just as a hook for opening our modal box, and we will style everything using the <em>modalDialog</em> class.&nbsp;</p>
+<p>Next, we add a div tag that will hold all of our content in the modal box. Inside of this div we are going to have a link to close the box which we will style with our CSS. We will then put a simple heading with a few paragraphs of text beneath it. Your HTML markup should now look like this:</p>
+<div class="pre-wrap">
+<pre class=" language-markup"><code class=" language-markup"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>a</span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>#openModal<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>Open Modal<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>a</span><span class="token punctuation">&gt;</span></span><span class="token lf">
+</span><span class="token lf">
+</span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>openModal<span class="token punctuation">"</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>modalDialog<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span><span class="token lf">
+</span><span class="token tab">	</span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span><span class="token punctuation">&gt;</span></span><span class="token lf">
+</span><span class="token tab">	</span><span class="token tab">	</span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>a</span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>#close<span class="token punctuation">"</span></span> <span class="token attr-name">title</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>Close<span class="token punctuation">"</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>close<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>X<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>a</span><span class="token punctuation">&gt;</span></span><span class="token lf">
+</span><span class="token tab">	</span><span class="token tab">	</span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>h2</span><span class="token punctuation">&gt;</span></span>Modal Box<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>h2</span><span class="token punctuation">&gt;</span></span><span class="token lf">
+</span><span class="token tab">	</span><span class="token tab">	</span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span><span class="token punctuation">&gt;</span></span>This is a sample modal box that can be created using the powers of CSS3.<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">&gt;</span></span><span class="token lf">
+</span><span class="token tab">	</span><span class="token tab">	</span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span><span class="token punctuation">&gt;</span></span>You could do a lot of things here like have a pop-up ad that shows when your website loads, or create a login/register form for users.<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">&gt;</span></span><span class="token lf">
+</span><span class="token tab">	</span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span><span class="token lf">
+</span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span></code></pre>
+</div>
+<p class="fixed-empty-p"></p><p class="fixed-empty-p">&nbsp;</p><h2>Starting styling</h2>
+<p>Right now we just have a link with a div showing beneath it. We will begin styling our box and making it actually functional. Let’s first create our <em>modalDialog</em> classes and start moving forward.&nbsp;</p>
+<div class="pre-wrap">
+<pre class=" language-css"><code class=" language-css"><span class="token selector"><span class="token class">.modalDialog</span> </span><span class="token punctuation">{</span><span class="token lf">
+</span><span class="token tab">	</span><span class="token property">position</span><span class="token punctuation">:</span> fixed<span class="token punctuation">;</span><span class="token lf">
+</span><span class="token tab">	</span><span class="token property">font-family</span><span class="token punctuation">:</span> Arial, Helvetica, sans-serif<span class="token punctuation">;</span><span class="token lf">
+</span><span class="token tab">	</span><span class="token property">top</span><span class="token punctuation">:</span> 0<span class="token punctuation">;</span><span class="token lf">
+</span><span class="token tab">	</span><span class="token property">right</span><span class="token punctuation">:</span> 0<span class="token punctuation">;</span><span class="token lf">
+</span><span class="token tab">	</span><span class="token property">bottom</span><span class="token punctuation">:</span> 0<span class="token punctuation">;</span><span class="token lf">
+</span><span class="token tab">	</span><span class="token property">left</span><span class="token punctuation">:</span> 0<span class="token punctuation">;</span><span class="token lf">
+</span><span class="token tab">	</span><span class="token property">background</span><span class="token punctuation">:</span> <span class="token function">rgba</span>(0,0,0,0.8)<span class="token punctuation">;</span><span class="token lf">
+</span><span class="token tab">	</span><span class="token property">z-index</span><span class="token punctuation">:</span> 99999<span class="token punctuation">;</span><span class="token lf">
+</span><span class="token tab">	</span><span class="token property">opacity</span><span class="token punctuation">:</span>0<span class="token punctuation">;</span><span class="token lf">
+</span><span class="token tab">	</span><span class="token property">-webkit-transition</span><span class="token punctuation">:</span> opacity 400ms ease-in<span class="token punctuation">;</span><span class="token lf">
+</span><span class="token tab">	</span><span class="token property">-moz-transition</span><span class="token punctuation">:</span> opacity 400ms ease-in<span class="token punctuation">;</span><span class="token lf">
+</span><span class="token tab">	</span><span class="token property">transition</span><span class="token punctuation">:</span> opacity 400ms ease-in<span class="token punctuation">;</span><span class="token lf">
+</span><span class="token tab">	</span><span class="token property">pointer-events</span><span class="token punctuation">:</span> none<span class="token punctuation">;</span><span class="token lf">
+</span><span class="token punctuation">}</span></code></pre>
+</div>
+<p>The code here is pretty simple. We style our dialog box by giving it a fixed position, meaning it will move down the page, when open, if you scroll. We also set our top, right, bottom, and left edges to 0 so that our dark background will span across the entire monitor.</p>
+<p>Since we are going to want the background around the modal box to go dark when it’s open, we set the background to black, and change the opacity slightly. We also make sure that our modal box is sitting on top of everything by setting our z-index property.</p>
+<p>Lastly, we set a nice transition for our modal box to show up on the screen, and hide the box when it’s not clicked on by setting the display to none.&nbsp;</p>
+<p>You may not be completely familiar with what the pointer-events property, but it allows you to control when you do and don’t want elements to be clickable. We set it for our <em>modalDialog</em> class because we don’t want the link to be clickable until the “:target” pseudo class is fired.</p>
+<p class="fixed-empty-p"></p><p class="fixed-empty-p">&nbsp;</p><h2>Functionality and looks</h2>
+<p>Now let’s add our <em>:target</em> pseudo class as well as the styling for our modal box.</p>
+<div class="pre-wrap">
+<pre class=" language-css"><code class=" language-css"><span class="token selector"><span class="token class">.modalDialog</span><span class="token pseudo-class">:target</span> </span><span class="token punctuation">{</span><span class="token lf">
+</span><span class="token tab">	</span><span class="token property">opacity</span><span class="token punctuation">:</span>1<span class="token punctuation">;</span><span class="token lf">
+</span><span class="token tab">	</span><span class="token property">pointer-events</span><span class="token punctuation">:</span> auto<span class="token punctuation">;</span><span class="token lf">
+</span><span class="token punctuation">}</span><span class="token lf">
+</span><span class="token lf">
+</span><span class="token selector"><span class="token class">.modalDialog</span> &gt; div </span><span class="token punctuation">{</span><span class="token lf">
+</span><span class="token tab">	</span><span class="token property">width</span><span class="token punctuation">:</span> 400px<span class="token punctuation">;</span><span class="token lf">
+</span><span class="token tab">	</span><span class="token property">position</span><span class="token punctuation">:</span> relative<span class="token punctuation">;</span><span class="token lf">
+</span><span class="token tab">	</span><span class="token property">margin</span><span class="token punctuation">:</span> 10% auto<span class="token punctuation">;</span><span class="token lf">
+</span><span class="token tab">	</span><span class="token property">padding</span><span class="token punctuation">:</span> 5px 20px 13px 20px<span class="token punctuation">;</span><span class="token lf">
+</span><span class="token tab">	</span><span class="token property">border-radius</span><span class="token punctuation">:</span> 10px<span class="token punctuation">;</span><span class="token lf">
+</span><span class="token tab">	</span><span class="token property">background</span><span class="token punctuation">:</span> #fff<span class="token punctuation">;</span><span class="token lf">
+</span><span class="token tab">	</span><span class="token property">background</span><span class="token punctuation">:</span> <span class="token function">-moz-linear-gradient</span>(#fff, #999)<span class="token punctuation">;</span><span class="token lf">
+</span><span class="token tab">	</span><span class="token property">background</span><span class="token punctuation">:</span> <span class="token function">-webkit-linear-gradient</span>(#fff, #999)<span class="token punctuation">;</span><span class="token lf">
+</span><span class="token tab">	</span><span class="token property">background</span><span class="token punctuation">:</span> <span class="token function">-o-linear-gradient</span>(#fff, #999)<span class="token punctuation">;</span><span class="token lf">
+</span><span class="token punctuation">}</span></code></pre>
+</div>
+<p>With our <em>target</em> pseudo class, we set our display to block, so that when the link is clicked our modal box will display. We also use our pointer-events property so that when the link is hovered over it’s active.&nbsp;</p>
+<p>We then style our div tag by setting the width, position, and using our margins to bump the modal box down from the top, and centering it on our page. We then add a little style by creating some padding, setting a nice border radius, and using a gradient of white to dark gray for our background.</p>
+<div class="finline-large"><img class="alignnone size-full wp-image-36576" title="modal_step3" alt="Step 3" src="./modal_files/modal_step3.png" width="615" height="450"></div>
+<p class="fixed-empty-p"></p><p class="fixed-empty-p">&nbsp;</p><h2>Closing it up</h2>
+<p>Now that we have styled the modal box and made it functional, the last thing we need to do is get our close button looking good. Using CSS3 and HTML5 can create buttons that look like they are images, but really aren’t. Here’s the CSS we use for this:</p>
+<div class="pre-wrap">
+<pre class=" language-css"><code class=" language-css"><span class="token selector"><span class="token class">.close</span> </span><span class="token punctuation">{</span><span class="token lf">
+</span><span class="token tab">	</span><span class="token property">background</span><span class="token punctuation">:</span> #606061<span class="token punctuation">;</span><span class="token lf">
+</span><span class="token tab">	</span><span class="token property">color</span><span class="token punctuation">:</span> #FFFFFF<span class="token punctuation">;</span><span class="token lf">
+</span><span class="token tab">	</span><span class="token property">line-height</span><span class="token punctuation">:</span> 25px<span class="token punctuation">;</span><span class="token lf">
+</span><span class="token tab">	</span><span class="token property">position</span><span class="token punctuation">:</span> absolute<span class="token punctuation">;</span><span class="token lf">
+</span><span class="token tab">	</span><span class="token property">right</span><span class="token punctuation">:</span> -12px<span class="token punctuation">;</span><span class="token lf">
+</span><span class="token tab">	</span><span class="token property">text-align</span><span class="token punctuation">:</span> center<span class="token punctuation">;</span><span class="token lf">
+</span><span class="token tab">	</span><span class="token property">top</span><span class="token punctuation">:</span> -10px<span class="token punctuation">;</span><span class="token lf">
+</span><span class="token tab">	</span><span class="token property">width</span><span class="token punctuation">:</span> 24px<span class="token punctuation">;</span><span class="token lf">
+</span><span class="token tab">	</span><span class="token property">text-decoration</span><span class="token punctuation">:</span> none<span class="token punctuation">;</span><span class="token lf">
+</span><span class="token tab">	</span><span class="token property">font-weight</span><span class="token punctuation">:</span> bold<span class="token punctuation">;</span><span class="token lf">
+</span><span class="token tab">	</span><span class="token property">-webkit-border-radius</span><span class="token punctuation">:</span> 12px<span class="token punctuation">;</span><span class="token lf">
+</span><span class="token tab">	</span><span class="token property">-moz-border-radius</span><span class="token punctuation">:</span> 12px<span class="token punctuation">;</span><span class="token lf">
+</span><span class="token tab">	</span><span class="token property">border-radius</span><span class="token punctuation">:</span> 12px<span class="token punctuation">;</span><span class="token lf">
+</span><span class="token tab">	</span><span class="token property">-moz-box-shadow</span><span class="token punctuation">:</span> 1px 1px 3px #000<span class="token punctuation">;</span><span class="token lf">
+</span><span class="token tab">	</span><span class="token property">-webkit-box-shadow</span><span class="token punctuation">:</span> 1px 1px 3px #000<span class="token punctuation">;</span><span class="token lf">
+</span><span class="token tab">	</span><span class="token property">box-shadow</span><span class="token punctuation">:</span> 1px 1px 3px #000<span class="token punctuation">;</span><span class="token lf">
+</span><span class="token punctuation">}</span><span class="token lf">
+</span><span class="token lf">
+</span><span class="token selector"><span class="token class">.close</span><span class="token pseudo-class">:hover</span> </span><span class="token punctuation">{</span> <span class="token property">background</span><span class="token punctuation">:</span> #00d9ff<span class="token punctuation">;</span> <span class="token punctuation">}</span></code></pre>
+</div>
+<p>For our close button we set the background button and position the text using our text-align and line-height. Then we position the button using position absolute, and set our top and right properties. How do we make it a circle and add some depth? We set the border radius to 12 and create a slight drop shadow. Then to add a little user response we change the background to a light blue when you hover over it (other ideas for hovering include adding a linear transition to fade in, changing font text, or expanding the box shadow slightly).</p>
+<div class="finline-large"><img class="alignnone size-full wp-image-36572" title="modal_final" alt="Step 4" src="./modal_files/modal_final.png" width="615" height="450"></div>
+<p class="fixed-empty-p"></p><p class="fixed-empty-p">&nbsp;</p><h2>Why our modal box is better</h2>
+<p>As you’ve probably noticed, the big selling point with this technique is creating a modal box in HTML5 and CSS3. Why is that such a big deal though? Modal boxes in JavaScript are something a beginner could create, there are hundreds of examples and downloads ready to be used. So why do we want to scrap JavaScript in favor of HTML5 and CSS3?&nbsp;</p>
+<p>It would be naïve of me to say that one selling point is making sure people with JavaScript can use them; statistics show that only 2% of people worldwide browse without JavaScript, so if that is not an issue, what is? Well we took advantage of CSS3 transitions when creating our modal box. The complete code was:</p>
+<div class="pre-wrap">
+<pre class=" language-css"><code class=" language-css"><span class="token property">-webkit-transition</span><span class="token punctuation">:</span> opacity 400ms ease-in<span class="token punctuation">;</span><span class="token lf">
+</span><span class="token property">-moz-transition</span><span class="token punctuation">:</span> opacity 400ms ease-in<span class="token punctuation">;</span><span class="token lf">
+</span><span class="token property">transition</span><span class="token punctuation">:</span> opacity 400ms ease-in<span class="token punctuation">;</span></code></pre>
+</div>
+<p>We only used three lines of code to create our animation. If you compare that to any JavaScript animation library you will be shocked to see how much our code is minimized. This leads into another reason, that is, we have cleaner code. We know what div that the animation is applied to, and that it’s only 3 lines long. This makes it easy for us to modify it or change the div as we see fit, and not have to worry about changing a div in JavaScript as well as the CSS and HTML.&nbsp;</p>
+<p>Lastly, HTML5 and CSS3 are the future. Everybody is working to implement them into their designs and projects, and using them helps perpetuate its adoption and ensures you don’t get left behind. You get cleaner code, you don’t have to worry about JavaScript libraries, and you have a whole slew of web designers and developers that are ready to help with any issues you might have because they are excited to learn more about the language as well. HTML5 and CSS3 aren’t going anywhere, so there’s no reason not to use them.</p>
+<p class="fixed-empty-p"></p><p class="fixed-empty-p">&nbsp;</p><h2>When to use modal boxes</h2>
+<p>So now that we’ve covered how to make the modal boxes and why you should make them with HTML5 and CSS3, what about when you should use modal boxes?&nbsp;</p>
+<h3>Login/register form</h3>
+<p>I think that modal boxes are particularly useful when used for login and registration forms. It creates such a streamlined experience for the user, and can really make an impression on your visitors.</p>
+<div class="finline-large"><a href="http://www.behance.net/" class="external" rel="nofollow"><img class="alignnone size-full wp-image-36574" title="modal_login" alt="Login" src="./modal_files/modal_login.png" width="615" height="450"></a></div>
+<p class="fixed-empty-p">
+</p><h3>Display images/videos</h3>
+<p></p><p>Another excellent use of modal boxes is to display images or videos (commonly known as lightboxes). It allows for the user to view the content of your website without leaving the webpage, thus keeping them further invested in your web experience.</p>
+<div class="finline-large"><a href="http://defaultprime.com/" class="external" rel="nofollow"><img class="alignnone size-full wp-image-36573" title="modal_lightbox" alt="Lightbox" src="./modal_files/modal_lightbox.png" width="615" height="450"></a></div>
+<p class="fixed-empty-p">
+</p><h3>User feedback</h3>
+<p></p><p>When a user is interacting on your webpage and you want to communicate or alert them about something, what better way to do it than a modal box? Facebook takes great advantage of this for when you want to change your language on their website, or for short blurbs like the “Why do I need to provide my birthday” link when you’re signing up. If it doesn’t have enough text or need to be a whole page, why not use a modal box?&nbsp;</p>
+<div class="finline-large"><a href="http://www.facebook.com/" class="external" rel="nofollow"><img class="alignnone size-full wp-image-36571" title="modal_alerts" alt="Alerts" src="./modal_files/modal_alerts.png" width="615" height="450"></a></div>
+<p class="fixed-empty-p">
+</p><h3>Advertisements</h3>
+<p></p><p>A great example of advertising using modal boxes is the music radio service Pandora. If you are not a member of their premium service, every once in a while you will get an advertisement on your screen. Sometimes these are audio advertisements that look like you’re just listening to a song, and sometimes it’s a popup box for a video. This is a great tactic for people looking to inject advertising into their webpages without always having them on the page.</p>
+<div class="finline-large"><a href="http://www.pandora.com/" class="external" rel="nofollow"><img class="alignnone size-full wp-image-36570 image-border" title="modal_advertising" alt="Advertising" src="./modal_files/modal_advertising.png" width="615" height="450"></a></div>
+<p class="fixed-empty-p"></p><p class="fixed-empty-p">&nbsp;</p><h2>Conclusion</h2>
+<p>There you have it, you can now create a simple HTML5 and CSS3 modal box, and you can use it for things like user login/registration forms, advertisements, and much more. You’ve also learned why we should use HTML5 and CSS3 instead of JavaScript, and seen some examples of how sites use modal boxes and how you can implement them into your own designs.</p>
+<p class="fixed-empty-p">
+</p><p><em><strong>Are you excited by the possibilites of HTML5 &amp; CSS3? Will JavaScript eventually go the way of Flash? Lend us your views in the comments below.</strong></em></p>
+<p><em>Thumbnail image <a href="http://www.shutterstock.com/pic-89142451/stock-photo-colorful-collage-made-of-antique-windows-in-italy.html" class="external" rel="nofollow">via Shutterstock.</a></em></p>
+
+  </article> <!-- enty-content -->
+  
+  <footer class="after-entry-wrap">
+  
+    <div class="aseparator"></div>
+  
+    <div id="single-large-socials">
+        
+        
+     
+
+<span class="lsi-block">
+    <span class="lsi-num" id="shrs-counter" data-num="1154">0</span>
+  <span class="lsi-num-label">shares</span>
+</span>
+
+<span class="lsi-slash"></span>
+
+
+  <div id="bottom-large-shares-btns">
+  <span class="twitter-large-btn">
+  <iframe id="twitter-widget-0" scrolling="no" frameborder="0" allowtransparency="true" src="./modal_files/tweet_button.c197f64a14a7434e6e58ca9722b54406.en.html" class="twitter-share-button twitter-tweet-button twitter-share-button twitter-count-vertical" title="Twitter Tweet Button" data-twttr-rendered="true" style="position: static; visibility: visible; width: 55px; height: 61px;"></iframe>
+</span>
+
+<span class="fb-large-btn">
+  <fb:like href="http://www.webdesignerdepot.com/2012/10/creating-a-modal-window-with-html5-and-css3/" send="false" layout="box_count" show_faces="false" font="" class=" fb_iframe_widget" fb-xfbml-state="rendered" fb-iframe-plugin-query="app_id=557447074316600&amp;container_width=0&amp;href=http%3A%2F%2Fwww.webdesignerdepot.com%2F2012%2F10%2Fcreating-a-modal-window-with-html5-and-css3%2F&amp;layout=box_count&amp;locale=en_US&amp;sdk=joey&amp;send=false&amp;show_faces=false"><span style="vertical-align: bottom; width: 48px; height: 61px;"><iframe name="f1130cc708" width="1000px" height="1000px" frameborder="0" allowtransparency="true" allowfullscreen="true" scrolling="no" title="fb:like Facebook Social Plugin" src="./modal_files/like.html" style="border: none; visibility: visible; width: 48px; height: 61px;" class=""></iframe></span></fb:like>
+</span>
+          
+<span class="plus-large-btn">
+  <div id="___plusone_0" style="text-indent: 0px; margin: 0px; padding: 0px; border-style: none; float: none; line-height: normal; font-size: 1px; vertical-align: baseline; display: inline-block; width: 50px; height: 60px; background: transparent;"><iframe frameborder="0" hspace="0" marginheight="0" marginwidth="0" scrolling="no" style="position: static; top: 0px; width: 50px; margin: 0px; border-style: none; left: 0px; visibility: visible; height: 60px;" tabindex="0" vspace="0" width="100%" id="I0_1434423602527" name="I0_1434423602527" src="./modal_files/fastbutton.html" data-gapiattached="true" title="+1"></iframe></div>
+</span>
+
+<span class="stumble-large-btn">
+  <iframe scrolling="no" frameborder="0" allowtransparency="true" src="./modal_files/container.html" width="50" height="60" id="iframe-stmblpn-widget-1" style="overflow: hidden; margin: 0px; padding: 0px; border: 0px;"></iframe>
+</span>
+
+
+
+
+<span class="linkedin-large-btn">
+  <script src="./modal_files/in.js" type="text/javascript"></script>
+  <script type="IN/Share" data-url="http://www.webdesignerdepot.com/2012/10/creating-a-modal-window-with-html5-and-css3/" data-counter="top"></script>
+</span>
+
+<span class="buffer-large-btn">
+  
+<iframe scrolling="no" frameborder="0" class="buffer-button" src="./modal_files/saved_resource.html" style="border: none; width: 55px; height: 62px;"></iframe></span>
+
+<span class="pinterest-large-btn" style="position: relative; top: 30px;">
+  <a class="PIN_1434423599893_pin_it_button_20 PIN_1434423599893_pin_it_button_en_20_red PIN_1434423599893_pin_it_button_inline_20 PIN_1434423599893_pin_it_above_20" data-pin-href="//www.pinterest.com/pin/create/button/?guid=f_bt4VRjhUcn-1&amp;url=http%3A%2F%2Fwww.webdesignerdepot.com%2F2012%2F10%2Fcreating-a-modal-window-with-html5-and-css3%2F&amp;media=http%3A%2F%2Fwebdesignerdepot.com%2Fuploads%2F2012%2F08%2Fthumb11.jpg&amp;description=Creating%20a%20modal%20window%20with%20HTML5%20%26%20CSS3%20%7C%20Webdesigner%20Depot" data-pin-log="button_pinit" data-pin-config="above"><span class="PIN_1434423599893_pin_it_button_count" id="PIN_1434423599893_pin_count_0"><i></i>14</span></a>
+<!-- Please call pinit.js only once per page -->
+
+</span>   
+
+
+
+
+  </div>
+
+</div>
+
+
+
+
+
+            
+               
+     
+     
+    <div class="aseparator"></div>
+     
+     
+     <div id="post-bottom-ads">
+               <!-- BuySellAds Zone Code -->
+                <div id="bsap_685" class="bsap" data-serve="CA7D5"><style type="text/css">
+
+</style>
+<!--INLINE--><script type="text/javascript" id="auto_1" class="ignoreme">
+var googletag = googletag || {};
+googletag.cmd = googletag.cmd || [];
+(function() {
+var gads = document.createElement('script');
+gads.async = true;
+gads.type = 'text/javascript';
+var useSSL = 'https:' == document.location.protocol;
+gads.src = (useSSL ? 'https:' : 'http:') + 
+'//www.googletagservices.com/tag/js/gpt.js';
+var node = document.getElementsByTagName('script')[0];
+node.parentNode.insertBefore(gads, node);
+})();
+</script>
+
+<script type="text/javascript" id="auto_2" class="ignoreme">
+googletag.cmd.push(function() {
+googletag.defineSlot('/8691100/Webdesignerdepot_med_rec_article_BTF_300x250_bsazone_1280370', [300, 250], 'div-gpt-ad-1358308353401-0').addService(googletag.pubads());
+googletag.pubads().set("page_url", "http://www.webdesignerdepot.com");
+googletag.pubads().enableSingleRequest();
+googletag.enableServices();
+});
+</script>
+<!-- Webdesignerdepot_med_rec_article_BTF_300x250_bsazone_1280370 -->
+<div id="div-gpt-ad-1358308353401-0" style="width:300px; height:250px;">
+<script type="text/javascript" id="auto_3" class="ignoreme">
+googletag.cmd.push(function() { googletag.display('div-gpt-ad-1358308353401-0'); });
+</script>
+<div id="google_ads_iframe_/8691100/Webdesignerdepot_med_rec_article_BTF_300x250_bsazone_1280370_0__container__" style="border: 0pt none;"><iframe id="google_ads_iframe_/8691100/Webdesignerdepot_med_rec_article_BTF_300x250_bsazone_1280370_0" name="google_ads_iframe_/8691100/Webdesignerdepot_med_rec_article_BTF_300x250_bsazone_1280370_0" width="300" height="250" scrolling="no" marginwidth="0" marginheight="0" frameborder="0" src="javascript:"<html><body style='background:transparent'></body></html>"" style="border: 0px; vertical-align: bottom;"></iframe></div><iframe id="google_ads_iframe_/8691100/Webdesignerdepot_med_rec_article_BTF_300x250_bsazone_1280370_0__hidden__" name="google_ads_iframe_/8691100/Webdesignerdepot_med_rec_article_BTF_300x250_bsazone_1280370_0__hidden__" width="0" height="0" scrolling="no" marginwidth="0" marginheight="0" frameborder="0" src="javascript:"<html><body style='background:transparent'></body></html>"" style="border: 0px; vertical-align: bottom; visibility: hidden; display: none;"></iframe></div>
+
+<script type="text/javascript" id="auto_4" class="ignoreme"> if (typeof(_bsap_serving_callback) !== 'undefined') _bsap_serving_callback(2416, 'CA7D5', ''); </script>
+<script type="text/javascript" id="auto_5" class="ignoreme"> if (typeof(BSAProLoadedCallback) !== 'undefined') BSAProLoadedCallback(685); </script></div>
+        
+                
+        <!-- End BuySellAds Zone Code -->
+             </div>
+     
+     
+     <div class="aseparator"></div>
+     <div class="post-author-bio">
+  <div class="ac-wrap">
+    <div class="asection-title">
+      <!--<div class="as-line"></div>-->
+        
+      By Keenan Payne    </div>
+  </div>  
+    
+  
+  <div class="author-bio-text">Keenan Payne is a full time student and a freelance web designer in his spare time. Besides writing and web design, he loves to skateboard and snowboard, and has been doing both for 11 and 6 years respectively, although some would say it’s getting progressively harder for him to step away from his work and wander outside.    <a data-title="Articles by Keenan Payne" href="http://www.webdesignerdepot.com/author/Keenan-Payne">More articles </a> by Keenan Payne  </div>
+  
+  <img alt="" src="./modal_files/655f4cf189cbb2349e5bad3314c4f3bc" srcset="http://0.gravatar.com/avatar/655f4cf189cbb2349e5bad3314c4f3bc?s=228&amp;d=mm&amp;r=g 2x" class="avatar avatar-114 photo" height="114" width="114"> 
+        
+</div>
+<div class="aseparator"></div>
+     
+     
+     
+		<div class="inner_related_posts">
+      
+              <div class="ac-wrap">
+  <div class="asection-title">
+    <div class="as-line"></div>
+    <span>Featured freebies</span>
+  </div>
+</div>  
+
+
+<div class="related-horizontal-items-wrap">
+ 
+  <div class="related-horizontal-items">
+	          
+        <div class="related-horizontal-item">
+      <div class="related-horizontal-content">
+      
+      <a class="horizonta-post-title news-sub-img-lnk" href="http://www.webdesignerdepot.com/2014/07/free-download-100-repeating-vector-patterns-from-freepik-com/">
+        <span class="hpi-wrap">
+                  <img class="horizontal-post-img" src="./modal_files/featured13.jpg" alt="">
+        </span>
+      
+        <span class="hpi-text">Free download: 100 repeating vector patterns from freepik.com</span>
+      </a>
+     </div>
+    </div>
+        
+                
+        <div class="related-horizontal-item">
+      <div class="related-horizontal-content">
+      
+      <a class="horizonta-post-title news-sub-img-lnk" href="http://www.webdesignerdepot.com/2015/01/free-download-60-business-icons-by-icons-mind/">
+        <span class="hpi-wrap">
+                  <img class="horizontal-post-img" src="./modal_files/featured3.jpg" alt="">
+        </span>
+      
+        <span class="hpi-text">Free download: 60 business icons by Icons Mind</span>
+      </a>
+     </div>
+    </div>
+        
+                
+        <div class="related-horizontal-item">
+      <div class="related-horizontal-content">
+      
+      <a class="horizonta-post-title news-sub-img-lnk" href="http://www.webdesignerdepot.com/2014/09/free-download-halloween-vector-pack/">
+        <span class="hpi-wrap">
+                  <img class="horizontal-post-img" src="./modal_files/featured19.jpg" alt="">
+        </span>
+      
+        <span class="hpi-text">Free download: Halloween vector pack</span>
+      </a>
+     </div>
+    </div>
+        
+            </div>
+    
+  
+    
+</div>    
+    
+
+
+      					  
+		</div>
+    
+    <div class="aseparator"></div>
+<div id="hot-deals-section" class="inner_related_posts">
+  
+  <div class="ac-wrap">
+    <div class="asection-title">
+          <span>Hot deals</span>
+    </div>
+  </div>  
+
+<div class="related-horizontal-items-wrap">
+   <div class="related-horizontal-items">
+	          
+        <div class="related-horizontal-item">
+      <div class="related-horizontal-content">
+      
+      <a class="horizonta-post-title news-sub-img-lnk" href="http://www.mightydeals.com/deal/trainsimple-lifetime.html?ref=wdd-hotdeals">
+        <span class="hpi-wrap">
+          <img class="horizontal-post-img" src="./modal_files/trainsimple.png" alt="">
+        </span>
+      
+        <span class="hpi-text">Lifetime Certified Training in Adobe Software from Train Simple - only $79!</span>
+      </a>
+     </div>
+    </div>
+        
+                
+        <div class="related-horizontal-item">
+      <div class="related-horizontal-content">
+      
+      <a class="horizonta-post-title news-sub-img-lnk" href="http://www.mightydeals.com/deal/the-design-deck.html?ref=wdd-hotdeals">
+        <span class="hpi-wrap">
+          <img class="horizontal-post-img" src="./modal_files/thedesigndeck.jpg" alt="">
+        </span>
+      
+        <span class="hpi-text">The Design Deck: Playing Cards for Designers - only $14!</span>
+      </a>
+     </div>
+    </div>
+        
+                
+        <div class="related-horizontal-item">
+      <div class="related-horizontal-content">
+      
+      <a class="horizonta-post-title news-sub-img-lnk" href="http://www.mightydeals.com/deal/instaglam.html?ref=wdd-hotdeals">
+        <span class="hpi-wrap">
+          <img class="horizontal-post-img" src="./modal_files/instaglam2.jpg" alt="">
+        </span>
+      
+        <span class="hpi-text">LAST DAY: Add Gold and Glam to your designs with Instaglam - only $17!</span>
+      </a>
+     </div>
+    </div>
+        
+            </div>
+    
+   </div>
+ 
+
+</div>
+
+    
+    <div class="aseparator"></div>
+     
+
+          <div id="comments_section">
+						
+				
+<div id="disqus_thread"><iframe id="dsq-2" data-disqus-uid="2" allowtransparency="true" frameborder="0" scrolling="no" tabindex="0" title="Disqus" width="100%" src="./modal_files/saved_resource(1).html" style="width: 100% !important; border: none !important; overflow: hidden !important; height: 0px !important;" horizontalscrolling="no" verticalscrolling="no"></iframe></div>
+
+<script type="text/javascript">
+var disqus_url = 'http://www.webdesignerdepot.com/2012/10/creating-a-modal-window-with-html5-and-css3/';
+var disqus_identifier = '36526 http://www.webdesignerdepot.com/?p=36526';
+var disqus_container_id = 'disqus_thread';
+var disqus_shortname = 'webdesignerdepot';
+var disqus_title = "Creating a modal window with HTML5 &amp; CSS3";
+var disqus_config_custom = window.disqus_config;
+var disqus_config = function () {
+    /*
+    All currently supported events:
+    onReady: fires when everything is ready,
+    onNewComment: fires when a new comment is posted,
+    onIdentify: fires when user is authenticated
+    */
+    
+    
+    this.language = '';
+        this.callbacks.onReady.push(function () {
+
+        // sync comments in the background so we don't block the page
+        var script = document.createElement('script');
+        script.async = true;
+        script.src = '?cf_action=sync_comments&post_id=36526';
+
+        var firstScript = document.getElementsByTagName('script')[0];
+        firstScript.parentNode.insertBefore(script, firstScript);
+    });
+    
+    if (disqus_config_custom) {
+        disqus_config_custom.call(this);
+    }
+};
+
+(function() {
+    var dsq = document.createElement('script'); dsq.type = 'text/javascript';
+    dsq.async = true;
+    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+})();
+</script>
+
+                
+				
+			</div>
+      
+      
+
+</footer>
+ 			 
+</div> <!-- entry -->
+
+ 
+</div><!-- entry-wrap -->
+
+  	
+</div>
+
+
+			
+
+		    
+    <aside id="fixed-social" class="active">
+  
+  <span class="fc-row" id="fc-row-total">
+        <span data-shares="1154" class="fc-icon">1.1k</span>
+    <span class="fc-shares">SHARES</span>
+  </span>
+  
+  <a href="http://www.webdesignerdepot.com/2012/10/creating-a-modal-window-with-html5-and-css3/#" class="fc-row" id="fc-row-facebook" data-url="http://www.webdesignerdepot.com/2012/10/creating-a-modal-window-with-html5-and-css3/" title="Facebook">
+    <span class="fc-icon icon-facebook"></span>
+    <span class="fc-shares">407</span>
+  </a>
+  
+  <a href="http://www.webdesignerdepot.com/2012/10/creating-a-modal-window-with-html5-and-css3/#" class="fc-row" id="fc-row-twitter" data-title="Creating a modal window with HTML5 &amp; CSS3" data-url="http://www.webdesignerdepot.com/2012/10/creating-a-modal-window-with-html5-and-css3/" title="Twitter">
+    <span class="fc-icon icon-twitter"></span>
+    <span class="fc-shares">522</span>
+    
+  </a>
+  
+  <a href="http://www.webdesignerdepot.com/2012/10/creating-a-modal-window-with-html5-and-css3/#" class="fc-row" id="fc-row-gplus" data-url="http://www.webdesignerdepot.com/2012/10/creating-a-modal-window-with-html5-and-css3/" title="Google+">
+    <span class="fc-icon icon-gplus"></span>
+    <span class="fc-shares">147</span>
+  </a>
+  
+  <a target="_blank" href="https://bufferapp.com/add?url=&count=horizontal&placement=button&&utm_medium=buffer_button&utm_campaign=buffer&source=button" class="fc-row" id="fc-row-buffer" data-url="http://www.webdesignerdepot.com/2012/10/creating-a-modal-window-with-html5-and-css3/" title="Buffer">
+    <span class="fc-icon icon-buffer"></span>
+    <span class="fc-shares">39</span>
+  </a>
+  
+  <a href="http://www.webdesignerdepot.com/2012/10/creating-a-modal-window-with-html5-and-css3/#" class="fc-row" id="fc-row-su" data-url="http://www.webdesignerdepot.com/2012/10/creating-a-modal-window-with-html5-and-css3/" title="StumbleUpon">
+    <span class="fc-icon icon-stumbleupon-circled"></span>
+    <span class="fc-shares">2</span>
+  </a>
+  
+  
+  <a href="http://www.webdesignerdepot.com/2012/10/creating-a-modal-window-with-html5-and-css3/#" class="fc-row" id="fc-row-pin" data-img="" data-url="http://www.webdesignerdepot.com/2012/10/creating-a-modal-window-with-html5-and-css3/" title="Pinterest">
+    <span class="fc-icon icon-pinterest-circled"></span>
+    <span class="fc-shares">14</span>
+  </a>
+  
+  
+    
+    <a class="fc-row" id="fc-row-mail" href="mailto:?subject=Check%20out%20this%20article:%20Creating%20a%20modal%20window%20with%20HTML5%20&%20CSS3&body=http://www.webdesignerdepot.com/2012/10/creating-a-modal-window-with-html5-and-css3/" title="Email">
+    <span class="fc-icon icon-email"></span>
+  </a>
+  
+</aside>  
+	   
+	
+
+
+<script>
+var showWdnPopup = true;
+</script>
+  
+      <script src="./modal_files/wdn-popup.php"></script>
+    
+
+
+         </div> <!-- face   -->
+         
+                <div id="bottom-banner" style="visibility: visible; opacity: 1;">
+                <script type="text/javascript" src="./modal_files/fpi.js"></script><iframe id="sovrn_ad_unit_159795_async" margin="0" padding="0" frameborder="0" width="728" height="90" scrolling="no" src="./modal_files/modal.html" data-zid="159795" class="sovrn_ad_unit" style="margin: 0px; padding: 0px; border: 0px none; width: 728px; height: 90px; overflow: hidden;"></iframe>
+       </div>
+                 
+          <!--<span id="preloader-spinner" class="icon-spin5"></span>-->
+          <div id="preloader-spinner">
+            <div class="circle">
+                            <div class="double-bounce1"></div>
+                            <div class="double-bounce2"></div>
+                        </div>
+          </div>
+          
+          <div id="pag-bottom-block">
+          
+               <div id="pagination-wrap" data-next-page="2" data-url="http://www.webdesignerdepot.com/">
+          </div>
+          
+          </div>
+          
+       </div> <!-- content -->
+     </div> <!-- content-wrap -->
+   <aside id="sidebar">
+ 
+ <div class="sidebar-banner-container">
+  <div class="bsads-300">
+        <div id="bsap_684" class="bsap" data-serve="CA7DK"><style type="text/css">
+
+</style>
+<a id="_bsap_ad_2408" href="http://srv.buysellads.com/ads/click/x/GTND423ICEBD623LF6B4YKQWCKBDVKJMCE7I6Z3JCE7IV23IC6SIVK7KC6BDC23WCV7IKK3EHJNCLSIZ" target="_blank"><img class="adcreative" id="adslot" alt=" " src="./modal_files/5189"></a>
+<script type="text/javascript" id="auto_6" class="ignoreme"> if (typeof(_bsap_serving_callback) !== 'undefined') _bsap_serving_callback(2408, 'CA7DK', ''); </script>
+<script type="text/javascript" id="auto_7" class="ignoreme"> if (typeof(BSAProLoadedCallback) !== 'undefined') BSAProLoadedCallback(684); </script></div>
+  </div>
+  
+</div>
+
+<div class="sb-nl-art"></div>
+<div id="sidebar-newsletter"> 
+ <div class="sidebar-title"><span>Newsletter</span></div>
+       <div class="sidebar-nl-text">
+       Join our <strong>686,938</strong> subscribers and get access to the latest tools, freebies, product announcements and much more!
+       </div>
+             <form target="sb-subscribe-form-frame" action="http://webdesignerdepot.us4.list-manage.com/subscribe/post?u=629d7697cf7444ce87d925a95&id=bd6aeb0bdd" id="sb-subscribe-form" method="post">
+           <input type="text" class="inactive footer-text-field" name="EMAIL" id="footer-subscribe-email" value="" placeholder="Enter email address">
+           <input type="hidden" name="REF" id="REF" value="wddsidebar">   
+           <input type="hidden" name="IP" id="nl_sb_ip_field" value="">
+           <input type="hidden" name="SIGNUPURL" id="SIGNUPURL" value="http://www.webdesignerdepot.com/2012/10/creating-a-modal-window-with-html5-and-css3/">
+           <div id="wdd_sb_nl_chk_txt">
+             <label><input type="checkbox" name="wdd_sb_nl_agree_chk" id="wdd_sb_nl_agree_chk" value="1"> Yes, subscribe me right now</label>
+           </div>
+          
+          <div class="sb-nl-btn-wrap">   
+            <input type="submit" class="footer-submit-btn" id="footer-subscribe-btn" value="Subscribe">
+          </div>
+           
+       </form>
+       
+       <iframe id="sb-subscribe-form-frame" name="sb-subscribe-form-frame" style="display:none;"></iframe>
+</div>
+<div class="sb-two-columns-ads">
+  
+  
+  
+  <div id="sb-bsap-rects-ads">
+         <div id="bsap_660" class="bsap" data-serve="CA7DV"><style type="text/css">
+
+</style>
+<a id="_bsap_ad_2383" href="http://srv.buysellads.com/ads/click/x/GTND423ICEBD623LF674YKQWCKBDVKJMCESI4Z3JCE7IV23ECASDV53KC6BDC23WCV7IKK3EHJNCLSIZ" target="_blank"><img class="adcreative" id="adslot" alt="PSD2HTML.com: Professional CMS integration" src="./modal_files/22099"></a>
+<script type="text/javascript" id="auto_8" class="ignoreme"> if (typeof(_bsap_serving_callback) !== 'undefined') _bsap_serving_callback(2383, 'CA7DV', ''); </script><a id="_bsap_ad_4019" href="http://srv.buysellads.com/ads/click/x/GTND423ICEBD623LF674YKQWCKBDVKJUCTYI4Z3JCE7IV23JCTSD55QKC6BDC23WCV7IKK3EHJNCLSIZ" target="_blank"><img class="adcreative" id="adslot" alt="Design to Email Templates" src="./modal_files/22421"></a>
+<script type="text/javascript" id="auto_9" class="ignoreme"> if (typeof(_bsap_serving_callback) !== 'undefined') _bsap_serving_callback(4019, 'CA7DV', ''); </script><a id="_bsap_ad_3640" href="http://srv.buysellads.com/ads/click/x/GTND423ICEBD623LF674YKQWCKBDVKJUC6BDVZ3JCE7IV23JF67IK53KC6BDC23WCV7IKK3EHJNCLSIZ" target="_blank"><img class="adcreative" id="adslot" alt="The Divi WordPress Theme by Elegant Themes" src="./modal_files/21733"></a>
+<script type="text/javascript" id="auto_10" class="ignoreme"> if (typeof(_bsap_serving_callback) !== 'undefined') _bsap_serving_callback(3640, 'CA7DV', ''); </script><a id="_bsap_ad_34796" href="http://srv.buysellads.com/ads/click/x/GTND423ICEBD623LF674YKQWCKBDC5QLCVADVZ3JCE7IV23ECYYD4KQKC6BDC23WCV7IKK3EHJNCLSIZ" target="_blank"><img class="adcreative" id="adslot" alt="PSD To HTML - Tagerr " src="./modal_files/22746"></a>
+<script type="text/javascript" id="auto_11" class="ignoreme"> if (typeof(_bsap_serving_callback) !== 'undefined') _bsap_serving_callback(34796, 'CA7DV', ''); </script><a id="_bsap_ad_32999" href="http://srv.buysellads.com/ads/click/x/GTND423ICEBD623LF674YKQWCKBDC5QEF6AILZ3JCE7IV23JCTBDT2JKC6BDC23WCV7IKK3EHJNCLSIZ" target="_blank"><img class="adcreative" id="adslot" alt="She will make your website responsive" src="./modal_files/22309"></a>
+<script type="text/javascript" id="auto_12" class="ignoreme"> if (typeof(_bsap_serving_callback) !== 'undefined') _bsap_serving_callback(32999, 'CA7DV', ''); </script><a id="_bsap_ad_2388" href="http://srv.buysellads.com/ads/click/x/GTND423ICEBD623LF674YKQWCKBDVKJMCEBDVZ3JCE7IV23LCWAI527KC6BDC23WCV7IKK3EHJNCLSIZ" target="_blank"><img class="adcreative" id="adslot" alt="Custom  responsive  newsletter and email designs." src="./modal_files/21416"></a>
+<script type="text/javascript" id="auto_13" class="ignoreme"> if (typeof(_bsap_serving_callback) !== 'undefined') _bsap_serving_callback(2388, 'CA7DV', ''); </script><a id="_bsap_ad_3349" href="http://srv.buysellads.com/ads/click/x/GTND423ICEBD623LF674YKQWCKBDVKJNCEYDPZ3JCE7IV23ICE7IL23KC6BDC23WCV7IKK3EHJNCLSIZ" target="_blank"><img class="adcreative" id="adslot" alt="PSD to Responsive" src="./modal_files/16205"></a>
+<script type="text/javascript" id="auto_14" class="ignoreme"> if (typeof(_bsap_serving_callback) !== 'undefined') _bsap_serving_callback(3349, 'CA7DV', ''); </script>
+<script type="text/javascript" id="auto_15" class="ignoreme"> if (typeof(BSAProLoadedCallback) !== 'undefined') BSAProLoadedCallback(660); </script></div>
+        <!-- BuySellAds PRO Zone Code (Mini square) -->
+          <div id="bsap_2050" class="bsap" data-serve="C6YIC53L"><style type="text/css">
+
+</style>
+<!-- no ad --><a id="_bsap_ad_28656" href="http://srv.buysellads.com/ads/click/x/GTND423ICEBDC23YFTS4YKQWCKBDV2QJCYBDEZ3JCE7IV23ECTBDE2QKC6BDC23WCV7IKK3EHJNCLSIZ" target="_blank"><img class="adcreative" id="adslot" alt="Max CDN" src="./modal_files/21428"></a>
+<script type="text/javascript" id="auto_16" class="ignoreme"> if (typeof(_bsap_serving_callback) !== 'undefined') _bsap_serving_callback(28656, 'C6YIC53L', ''); </script>
+<script type="text/javascript" id="auto_17" class="ignoreme"> if (typeof(BSAProLoadedCallback) !== 'undefined') BSAProLoadedCallback(2050); </script></div>
+        <!-- End BuySellAds PRO Zone Code -->
+    
+  </div>
+  
+</div>
+
+<div class="sidebar-block" id="popular-posts-widget">
+  
+    <div class="sidebar-title"><span>Popular posts</span></div>
+  
+ 
+     
+  
+  	<div class="pop-wg-wrap">
+    <ul class="side-popular-list" id="side-popular-list-0">
+     <li class="sb-pop-row">
+    
+    <div class="spr-lnk">
+     
+      <a href="http://www.webdesignerdepot.com/2015/06/4-essential-elements-of-successful-ux-design/" class="spr-number" data-num="01"></a>
+      <a href="http://www.webdesignerdepot.com/2015/06/4-essential-elements-of-successful-ux-design/" class="spr-title">4 essential elements of successful UX design</a>
+      
+      <div class="pop-sub-social">
+        	          <span class="shares-count">
+          787 Shares</span> 
+          <span class="pop-shares">
+             
+	  <a class="fb-stub self-handle" href="javascript:void(0);" data-href="http://www.webdesignerdepot.com/2015/06/4-essential-elements-of-successful-ux-design/" data-title="4 essential elements of successful UX design" data-shares="64">Like
+        <span class="fb-stub-arr"></span>
+      </a>
+	<a data-shares="409" class="tw-stub" href="https://twitter.com/intent/tweet?original_referer=http%3A%2F%2Fwww.webdesignerdepot.com%2F&via=designerdepot&text=4+essential+elements+of+successful+UX+design&source=tweetbutton&url=http://www.webdesignerdepot.com/2015/06/4-essential-elements-of-successful-ux-design/" target="_blank">Tweet
+        <span class="tw-stub-ico"></span>
+        <span class="tw-stub-arr"></span>
+    </a>          </span>
+        
+    </div>
+      
+    </div>
+    
+   </li>
+      <li class="sb-pop-row">
+    
+    <div class="spr-lnk">
+     
+      <a href="http://www.webdesignerdepot.com/2015/06/how-to-make-wordpress-images-responsive/" class="spr-number" data-num="02"></a>
+      <a href="http://www.webdesignerdepot.com/2015/06/how-to-make-wordpress-images-responsive/" class="spr-title">How to make WordPress images responsive</a>
+      
+      <div class="pop-sub-social">
+        	          <span class="shares-count">
+          775 Shares</span> 
+          <span class="pop-shares">
+             
+	  <a class="fb-stub self-handle" href="javascript:void(0);" data-href="http://www.webdesignerdepot.com/2015/06/how-to-make-wordpress-images-responsive/" data-title="How to make WordPress images responsive" data-shares="86">Like
+        <span class="fb-stub-arr"></span>
+      </a>
+	<a data-shares="473" class="tw-stub" href="https://twitter.com/intent/tweet?original_referer=http%3A%2F%2Fwww.webdesignerdepot.com%2F&via=designerdepot&text=How+to+make+WordPress+images+responsive&source=tweetbutton&url=http://www.webdesignerdepot.com/2015/06/how-to-make-wordpress-images-responsive/" target="_blank">Tweet
+        <span class="tw-stub-ico"></span>
+        <span class="tw-stub-arr"></span>
+    </a>          </span>
+        
+    </div>
+      
+    </div>
+    
+   </li>
+      <li class="sb-pop-row">
+    
+    <div class="spr-lnk">
+     
+      <a href="http://www.webdesignerdepot.com/2015/06/how-to-perfect-ux-with-design-affordances/" class="spr-number" data-num="03"></a>
+      <a href="http://www.webdesignerdepot.com/2015/06/how-to-perfect-ux-with-design-affordances/" class="spr-title">How to perfect UX with design affordances</a>
+      
+      <div class="pop-sub-social">
+        	          <span class="shares-count">
+          676 Shares</span> 
+          <span class="pop-shares">
+             
+	  <a class="fb-stub self-handle" href="javascript:void(0);" data-href="http://www.webdesignerdepot.com/2015/06/how-to-perfect-ux-with-design-affordances/" data-title="How to perfect UX with design affordances" data-shares="48">Like
+        <span class="fb-stub-arr"></span>
+      </a>
+	<a data-shares="428" class="tw-stub" href="https://twitter.com/intent/tweet?original_referer=http%3A%2F%2Fwww.webdesignerdepot.com%2F&via=designerdepot&text=How+to+perfect+UX+with+design+affordances&source=tweetbutton&url=http://www.webdesignerdepot.com/2015/06/how-to-perfect-ux-with-design-affordances/" target="_blank">Tweet
+        <span class="tw-stub-ico"></span>
+        <span class="tw-stub-arr"></span>
+    </a>          </span>
+        
+    </div>
+      
+    </div>
+    
+   </li>
+      <li class="sb-pop-row">
+    
+    <div class="spr-lnk">
+     
+      <a href="http://www.webdesignerdepot.com/2015/06/whats-new-for-designers-june-2015/" class="spr-number" data-num="04"></a>
+      <a href="http://www.webdesignerdepot.com/2015/06/whats-new-for-designers-june-2015/" class="spr-title">What’s new for designers, June 2015</a>
+      
+      <div class="pop-sub-social">
+        	          <span class="shares-count">
+          548 Shares</span> 
+          <span class="pop-shares">
+             
+	  <a class="fb-stub self-handle" href="javascript:void(0);" data-href="http://www.webdesignerdepot.com/2015/06/whats-new-for-designers-june-2015/" data-title="What’s new for designers, June 2015" data-shares="91">Like
+        <span class="fb-stub-arr"></span>
+      </a>
+	<a data-shares="321" class="tw-stub" href="https://twitter.com/intent/tweet?original_referer=http%3A%2F%2Fwww.webdesignerdepot.com%2F&via=designerdepot&text=What%E2%80%99s+new+for+designers%2C+June+2015&source=tweetbutton&url=http://www.webdesignerdepot.com/2015/06/whats-new-for-designers-june-2015/" target="_blank">Tweet
+        <span class="tw-stub-ico"></span>
+        <span class="tw-stub-arr"></span>
+    </a>          </span>
+        
+    </div>
+      
+    </div>
+    
+   </li>
+      <li class="sb-pop-row">
+    
+    <div class="spr-lnk">
+     
+      <a href="http://www.webdesignerdepot.com/2015/06/safari-9-everything-web-designers-need-to-know-now/" class="spr-number" data-num="05"></a>
+      <a href="http://www.webdesignerdepot.com/2015/06/safari-9-everything-web-designers-need-to-know-now/" class="spr-title">Safari 9: Everything web designers need to know now</a>
+      
+      <div class="pop-sub-social">
+        	          <span class="shares-count">
+          441 Shares</span> 
+          <span class="pop-shares">
+             
+	  <a class="fb-stub self-handle" href="javascript:void(0);" data-href="http://www.webdesignerdepot.com/2015/06/safari-9-everything-web-designers-need-to-know-now/" data-title="Safari 9: Everything web designers need to know now" data-shares="134">Like
+        <span class="fb-stub-arr"></span>
+      </a>
+	<a data-shares="3" class="tw-stub" href="https://twitter.com/intent/tweet?original_referer=http%3A%2F%2Fwww.webdesignerdepot.com%2F&via=designerdepot&text=Safari+9%3A+Everything+web+designers+need+to+know+now&source=tweetbutton&url=http://www.webdesignerdepot.com/2015/06/safari-9-everything-web-designers-need-to-know-now/" target="_blank">Tweet
+        <span class="tw-stub-ico"></span>
+        <span class="tw-stub-arr"></span>
+    </a>          </span>
+        
+    </div>
+      
+    </div>
+    
+   </li>
+      <li class="sb-pop-row">
+    
+    <div class="spr-lnk">
+     
+      <a href="http://www.webdesignerdepot.com/2015/06/aol-com-redesigns-mobile-first/" class="spr-number" data-num="06"></a>
+      <a href="http://www.webdesignerdepot.com/2015/06/aol-com-redesigns-mobile-first/" class="spr-title">Aol.com redesigns mobile-first</a>
+      
+      <div class="pop-sub-social">
+        	          <span class="shares-count">
+          426 Shares</span> 
+          <span class="pop-shares">
+             
+	  <a class="fb-stub self-handle" href="javascript:void(0);" data-href="http://www.webdesignerdepot.com/2015/06/aol-com-redesigns-mobile-first/" data-title="Aol.com redesigns mobile-first" data-shares="22">Like
+        <span class="fb-stub-arr"></span>
+      </a>
+	<a data-shares="229" class="tw-stub" href="https://twitter.com/intent/tweet?original_referer=http%3A%2F%2Fwww.webdesignerdepot.com%2F&via=designerdepot&text=Aol.com+redesigns+mobile-first&source=tweetbutton&url=http://www.webdesignerdepot.com/2015/06/aol-com-redesigns-mobile-first/" target="_blank">Tweet
+        <span class="tw-stub-ico"></span>
+        <span class="tw-stub-arr"></span>
+    </a>          </span>
+        
+    </div>
+      
+    </div>
+    
+   </li>
+     
+  </ul>
+    </div><!-- pop-wg-wrap -->
+  
+  
+</div>
+
+<div class="sidebar-block" id="polls-widget">
+  <div class="sidebar-title"><span>Quick poll</span></div>
+                 <div class="widget-poll">
+                <div class="widget-poll-question">Which quote is the best advice for designers?</div>
+                
+                <form id="poll143" method="post" action="http://www.webdesignerdepot.com/">
+                
+                    <div id="show-form143" class="show-form143">
+        
+        <table><tbody><tr><td><input type="radio" id="poll-val-624" name="143" value="624"></td><td><label for="poll-val-624">Don’t try to be original, try to be good — Paul Rand</label></td></tr><tr><td><input type="radio" id="poll-val-625" name="143" value="625"></td><td><label for="poll-val-625">Good artists copy, great artists steal — Pablo Picasso</label></td></tr><tr><td><input type="radio" id="poll-val-626" name="143" value="626"></td><td><label for="poll-val-626">The only way to do great work is to love what you do — Steve Jobs</label></td></tr><tr><td><input type="radio" id="poll-val-627" name="143" value="627"></td><td><label for="poll-val-627">Don’t work for assholes. Don’t work with assholes — Erik Spiekermann</label></td></tr><tr><td><input type="radio" id="poll-val-628" name="143" value="628"></td><td><label for="poll-val-628">There are three responses to a piece of design – yes, no, and WOW! Wow is the one to aim for — Milton Glaser</label></td></tr></tbody></table>        <input type="hidden" value="143" name="poll_id">
+        <input type="hidden" value="1478390400" name="expiry">
+        <input type="hidden" value="one" name="answertype">
+        <input type="hidden" value="100" name="max_no_of_answers">
+        <input type="hidden" value="submit_vote" name="action">
+        <input class="poll-wh-style" type="button" value="Vote" onclick="javascript:vote_poll(143,&#39;one&#39;,100)">                
+    </div>
+    		<div class="poll-show-results" style="display:none;">
+		    <div class="show-results143">
+    <div class="total-votes"><strong class="poll-total-votes">Total votes: </strong>30</div><div class="result-answer">Don’t try to be original, try to be good — Paul Rand (7 votes, 23%)</div><div style="height:10px;width:23.333333333333%;background-color:#d1d1d1"></div><div class="result-answer">Good artists copy, great artists steal — Pablo Picasso (3 votes, 10%)</div><div style="height:10px;width:10%;background-color:#d1d1d1"></div><div class="result-answer">The only way to do great work is to love what you do — Steve Jobs (10 votes, 33%)</div><div style="height:10px;width:33.333333333333%;background-color:#d1d1d1"></div><div class="result-answer">Don’t work for assholes. Don’t work with assholes — Erik Spiekermann (4 votes, 13%)</div><div style="height:10px;width:13.333333333333%;background-color:#d1d1d1"></div><div class="result-answer">There are three responses to a piece of design – yes, no, and WOW! Wow is the one to aim for — Milton Glaser (6 votes, 21%)</div><div style="height:10px;width:21%;background-color:#d1d1d1"></div>    </div>
+				</div>
+	                </form>
+            </div>
+            
+        </div>   
+<div id="pre-glad-sb-wrap"></div>
+  
+  <div id="glad-sb-wrap">  
+  <div class="google-ads-sidebar" style="margin:20px auto 0px;">
+    
+     
+    <script async="" src="./modal_files/adsbygoogle.js"></script>
+<!-- WDD - 300x600 -->
+<ins class="adsbygoogle" style="display:inline-block;width:300px;height:600px" data-ad-client="ca-pub-5778786047058798" data-ad-slot="6337423170" data-adsbygoogle-status="done"><ins id="aswift_0_expand" style="display:inline-table;border:none;height:600px;margin:0;padding:0;position:relative;visibility:visible;width:300px;background-color:transparent"><ins id="aswift_0_anchor" style="display:block;border:none;height:600px;margin:0;padding:0;position:relative;visibility:visible;width:300px;background-color:transparent"><iframe width="300" height="600" frameborder="0" marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true" scrolling="no" allowfullscreen="true" onload="var i=this.id,s=window.google_iframe_oncopy,H=s&amp;&amp;s.handlers,h=H&amp;&amp;H[i],w=this.contentWindow,d;try{d=w.document}catch(e){}if(h&amp;&amp;d&amp;&amp;(!d.body||!d.body.firstChild)){if(h.call){setTimeout(h,0)}else if(h.match){try{h=s.upd(h,i)}catch(e){}w.location.replace(h)}}" id="aswift_0" name="aswift_0" style="left:0;position:absolute;top:0;"></iframe></ins></ins></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+          
+	</div>
+ </div> 
+  
+</aside>    
+  </div>
+  <div id="mw-block-after"></div>
+  
+</div><!-- main-wrap -->
+
+<a href="http://www.webdesignerdepot.com/2012/10/creating-a-modal-window-with-html5-and-css3/#header-wrap" id="top_link" class="active"></a>
+
+<footer id="footer-wrap">
+ 
+  <div class="long-art"></div>
+  <div id="footer-nav" class="content-block">
+      <div class="footer-left">
+        <nav id="footer-nav-links">
+        <a href="http://www.webdesignerdepot.com/">Home</a>
+         <a href="http://www.webdesignerdepot.com/about">About</a>
+         <a href="http://www.webdesignerdepot.com/categories">Categories</a>
+         <a href="http://www.webdesignerdepot.com/archive">Archive</a>
+         <a href="http://www.webdesignerdepot.com/authors">Authors</a>
+         <a href="http://www.webdesignerdepot.com/newsletter">Newsletter</a>
+         <a class="m-contact-link" href="http://www.webdesignerdepot.com/contact?sm=advertise">Advertise</a>
+         <a href="http://www.webdesignerdepot.com/write-for-us">Write for us</a>
+         <a href="http://www.webdesignerdepot.com/disclaimer-and-privacy-policy">Legal</a>
+         <a class="m-contact-link" href="http://www.webdesignerdepot.com/contact">Contact</a>
+         
+      </nav>
+     
+      
+      <div id="footer-copyright">
+      ©  2010-2015 All Rights Reserved
+     </div>
+     
+     </div>
+     
+     
+     <div id="footer-social-icons">
+
+     <span class="fsl-item">
+     <a class="header-social-lnk fsl-fb" href="https://www.facebook.com/webdesignerdepot">
+       <span class="header-social-icon icon-facebook"></span>
+      </a>
+      
+      <span class="fsl-info">
+    <span class="fsl-follow"><span class="sn-label">Become a fan</span></span>
+    <span class="footer-social-num">
+     210,131    </span>
+  </span>
+      
+     </span> 
+
+<span class="fsl-item">
+<a class="header-social-lnk fsl-tw" href="http://twitter.com/designerdepot">
+<span class="header-social-icon icon-twitter"></span>
+</a>
+<span class="fsl-info">
+   <span class="fsl-follow"><span class="sn-label">Follow us</span></span>
+   <span class="footer-social-num">
+   612,458   </span>
+ </span>
+</span> 
+
+<span class="fsl-item">
+<a class="header-social-lnk fsl-rss" href="http://feeds2.feedburner.com/webdesignerdepot?format=html">
+  <span class="header-social-icon icon-rss"></span>
+</a>
+
+ <span class="fsl-info">
+    <span class="fsl-follow"><span class="sn-label">Subscribe</span></span>
+    <span class="footer-social-num">
+90,777    </span>
+  </span>
+</span>
+
+</div>   
+     
+  </div>
+</footer>       
+
+<!--[if lte IE 8]>
+  <script type="text/javascript" src="http://www.webdesignerdepot.com/wp-content/themes/wdd/js/html5shiv.js"></script>
+  <script type="text/javascript" src="http://www.webdesignerdepot.com/wp-content/themes/wdd/js/css3-mediaqueries.js"></script>
+<![endif]-->
+
+<!--[if lte IE 9 ]>
+<script>
+var is_ie_lte9 = true;
+</script>
+<![endif]--> 
+
+<script type="text/javascript">
+setTimeout(function(){var a=document.createElement("script");
+var b=document.getElementsByTagName('script')[0];
+a.src=document.location.protocol+"//script.crazyegg.com/pages/scripts/0025/7182.js";
+a.async=true;a.type="text/javascript";b.parentNode.insertBefore(a,b)}, 1);
+</script>
+        <script type="text/javascript">
+        // <![CDATA[
+        var disqus_shortname = 'webdesignerdepot';
+        (function () {
+            var nodes = document.getElementsByTagName('span');
+            for (var i = 0, url; i < nodes.length; i++) {
+                if (nodes[i].className.indexOf('dsq-postid') != -1) {
+                    nodes[i].parentNode.setAttribute('data-disqus-identifier', nodes[i].getAttribute('data-dsqidentifier'));
+                    url = nodes[i].parentNode.href.split('#', 1);
+                    if (url.length == 1) { url = url[0]; }
+                    else { url = url[1]; }
+                    nodes[i].parentNode.href = url + '#disqus_thread';
+                }
+            }
+            var s = document.createElement('script'); 
+            s.async = true;
+            s.type = 'text/javascript';
+            s.src = '//' + disqus_shortname + '.disqus.com/count.js';
+            (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+        }());
+        // ]]>
+        </script>
+        <script type="text/javascript" src="./modal_files/jquery.js"></script>
+
+
+<script src="./modal_files/main.js"></script>
+
+
+
+<script type="text/javascript">
+  (function() {
+    var li = document.createElement('script'); li.type = 'text/javascript'; 
+    li.async = true;
+    li.src = ('https:' == document.location.protocol ? 'https:' : 'http:') + '//platform.stumbleupon.com/1/widgets.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(li, s);
+  })();
+</script> 
+
+<div id="fb-root" class=" fb_reset"><div style="position: absolute; top: -10000px; height: 0px; width: 0px;"><div><iframe name="fb_xdm_frame_http" frameborder="0" allowtransparency="true" allowfullscreen="true" scrolling="no" id="fb_xdm_frame_http" aria-hidden="true" title="Facebook Cross Domain Communication Frame" tabindex="-1" src="./modal_files/1ldYU13brY_.html" style="border: none;"></iframe><iframe name="fb_xdm_frame_https" frameborder="0" allowtransparency="true" allowfullscreen="true" scrolling="no" id="fb_xdm_frame_https" aria-hidden="true" title="Facebook Cross Domain Communication Frame" tabindex="-1" src="./modal_files/1ldYU13brY_(1).html" style="border: none;"></iframe></div></div><div style="position: absolute; top: -10000px; height: 0px; width: 0px;"><div></div></div></div>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&appId=557447074316600&version=v2.0";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+     <script type="text/javascript">
+            (function() {
+              var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+              po.src = 'https://apis.google.com/js/plusone.js';
+              var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+            })();
+            </script>
+            
+<script type="text/javascript" src="./modal_files/button.js"></script>            
+
+            
+
+
+  
+
+
+
+
+<script type="text/javascript">
+
+try {
+var _gaq = _gaq || [];
+_gaq.push(['_setAccount', 'UA-331696-9']);
+_gaq.push(['_trackPageview']);
+
+(function() {
+ var ga = document.createElement('script');
+ ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 
+   'http://www') + '.google-analytics.com/ga.js';
+ ga.setAttribute('async', 'true');
+ document.documentElement.firstChild.appendChild(ga);
+})();
+
+} catch(err) {}
+
+</script><script async="" type="text/javascript" src="./modal_files/check_359604.js"></script><iframe src="./modal_files/container.html" style="visibility: hidden; display: none;"></iframe>
+  
+  
+
+
+<!-- Dynamic page generated in 2.107 seconds. -->
+<!-- Cached page generated by WP-Super-Cache on 2015-06-15 23:31:32 -->
+
+<!-- super cache --><div class="autocomplete-suggestions" style="position: absolute; display: none; max-height: 300px; z-index: 9999;"></div><div><div class="sweet-overlay"></div><div class="sweet-alert"><div class="icon error"><span class="x-mark"><span class="line left"></span><span class="line right"></span></span></div><div class="icon warning"> <span class="body"></span> <span class="dot"></span> </div> <div class="icon info"></div> <div class="icon success"> <span class="line tip"></span> <span class="line long"></span> <div class="placeholder"></div> <div class="fix"></div> </div> <div class="icon custom"></div> <h2>Title</h2><p>Text</p><button class="cancel">Cancel</button><button class="confirm">OK</button></div></div><iframe name="oauth2relay391543293" id="oauth2relay391543293" src="./modal_files/postmessageRelay.html" tabindex="-1" style="width: 1px; height: 1px; position: absolute; top: -100px;"></iframe></body></html>
