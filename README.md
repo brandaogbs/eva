@@ -1,3 +1,4 @@
+Desenvolvido por :Guilherme (Brandao + Oliveira)
 # Simples Automação via Serial com Arduino
 
 Controle e automação de equipamentos de alta tensão como lampadas, ventiladores e cafeteiras a partir da internet, possibilitando assim utilizar qualquer equipamento com conexão a rede como smartphones, tablets e pcs como controle.
