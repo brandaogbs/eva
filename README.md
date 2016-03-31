@@ -9,15 +9,15 @@ Tentou-se manter o mais simples e elegante, não fazendo uso de shields ou modul
 
 1. Obter o Apache e o PHP,
 
-	sudo apt-get install apache2
-	sudo apt-get install libapache2-mod-php
-	sudo a2enmod php5
+		sudo apt-get install apache2
+		sudo apt-get install libapache2-mod-php
+		sudo a2enmod php5
 
 2. Download do [Projeto](https://github.com/brandaogbs/eva).
 
 3. Mova para o `/var/www/html`. Caso seja necessário ter permissão:
 
-	sudo chown <usuario> /var/www/html
+		sudo chown <usuario> /var/www/html
 
 4. Configurar a certificação SSL:
 
