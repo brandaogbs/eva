@@ -9,15 +9,15 @@ Tentou-se manter o mais simples e elegante, não fazendo uso de shields ou modul
 
 1. Obter o Apache e o PHP,
 
-	   sudo apt-get install apache2
-	   sudo apt-get install libapache2-mod-php
-	   sudo a2enmod php5
+	sudo apt-get install apache2
+	sudo apt-get install libapache2-mod-php
+	sudo a2enmod php5
 
 2. Download do [Projeto](https://github.com/brandaogbs/eva).
 
 3. Mova para o `/var/www/html`. Caso seja necessário ter permissão:
 
-		sudo chown <usuario> /var/www/html
+	sudo chown <usuario> /var/www/html
 
 4. Configurar a certificação SSL:
 
@@ -28,7 +28,7 @@ Tentou-se manter o mais simples e elegante, não fazendo uso de shields ou modul
 
 >Criar um Self-Signed SSL Certificate, complete os campos com dados qualquer
 
-		sudo mkdir /etc/apache2/ssl
+	sudo mkdir /etc/apache2/ssl
 	sudo openssl req -x509 -nodes -days 365 -newkey rsa:2048 -keyout /etc/apache2/ssl/apache.key -out /etc/apache2/ssl/apache.crt
 
 >Ativar o SSL Virtual Host
